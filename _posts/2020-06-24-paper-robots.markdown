@@ -10,7 +10,7 @@ displayimg: web/img/horizontal_paperbots_car.jpeg
 </div>
 
 <div class="sitetitle hjhj" markdown="1">
-# PaperBots Hello
+# PaperBotsHello
 </div>
 
 
