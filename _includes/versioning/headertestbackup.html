@@ -1,0 +1,127 @@
+
+<!doctype htm
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title>append demo</title>
+<style>
+#mycontent{
+     display:none;
+}
+</style>
+
+<script type="text/javascript">
+
+     function copyDiv(){
+
+          console.log("looprun");
+          CreateSections();
+          // CreateHeader();
+          // ChangeImageURL();
+
+      }
+      function CreateSections(){
+            var Myothermark  = document.getElementsByClassName('myfirst');
+           for (var i=0; i < Myothermark.length;i++) {
+                var MainSection  = document.getElementsByClassName('sampledatasection');
+
+                var newdiv = document.createElement("div");
+                newdiv.className = "datasection";
+                console.log("DataSectionCreated")
+                var element = document.getElementById("fullbody");
+                element.appendChild(newdiv);
+                newdiv.innerHTML = MainSection[0].innerHTML;
+
+
+               console.log("DIVIDE HERE---------------------");
+               var list = newdiv.getElementsByTagName("h2")[0];
+               var sub = newdiv.getElementsByTagName("h1")[0];
+               var para = newdiv.getElementsByTagName("p")[1];
+
+              var mainheader = document.getElementById("mainheader");
+              var subheader = document.getElementById("subheader");
+              var myparagraph = document.getElementById("myparagraph");
+
+               mainheader.innerHTML = list.innerHTML;
+               subheader.innerHTML = sub.innerHTML;
+               myparagraph.innerHTML = para.innerHTML;
+           }
+
+      }
+     function CreateHeader(){
+          var Myothermark  = document.getElementsByClassName('myfirst');
+
+          for (var i=0; i < Myothermark.length;i++) {
+               var list = Myothermark[0].getElementsByTagName("h2")[0];
+               var sub = Myothermark[0].getElementsByTagName("h1")[0];
+               var para = Myothermark[0].getElementsByTagName("p")[1];
+               console.log("inner html collected");
+
+               var mainSection = document.getElementsByClassName('datasection')[i];
+               console.log("inner html collected");
+               console.log(mainSection);
+
+               var initmainSection = document.getElementsByClassName('sampledatasection')[i];
+               var mainheader = initmainSection.getElementById("mainheader")[i];
+               console.log("mainheader");
+               var subheader = initmainSection.getElementById("subheader")[i];
+               var myparagraph = initmainSection.getElementById("myparagraph")[i];
+
+               mainheader.innerHTML = list.innerHTML;
+               subheader.innerHTML = sub.innerHTML;
+               myparagraph.innerHTML = para.innerHTML;
+          }
+     }
+     function ChangeImageURL(){
+          var Myothermark  = document.getElementsByClassName('myfirst');
+          for (var i=0; i < Myothermark.length;i++) {
+          var mypiclink = Myothermark[i].getElementsByTagName("img")[0].src;
+          document.getElementById("myImg").src = mypiclink;
+          }
+     }
+
+
+</script>
+</head>
+<body onload="copyDiv()">
+<div id="fullbody">
+     <div id="mycontent">
+     {{content}}
+     </div>
+
+     this is my transferclass
+     <div id="transferhere">
+
+     </div>
+
+
+
+<div class="sampledatasection">
+<section class="page-section clearfix">
+  <div class="container">
+   <div class="intro">
+
+      <img id="myImg" class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{page.introimage}}" alt="">
+       <!--...........................................................................................-->
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <h2 class="section-heading mb-4">
+
+          <span id ="mainheader" class="section-heading-upper" style="text-transform: none; color:black">{{ page.header2 }}</span>
+
+          <span id="subheader" class="section-heading-lower" style="color:black">{{ page.subheader }}</span>
+
+        </h2>
+
+        <p id="myparagraph" class="mb-3">	{{ page.describe }}
+           <!--....................................................................................................................................-->
+        </p>
+      </div>
+   </div>
+  </div>
+</section>
+</div>
+
+
+          </div>
+     </body>
+</html>

@@ -1,0 +1,20 @@
+
+{% capture my_instruct %}
+     {{page.instruct4}}
+{% endcapture %}
+{% capture instructtitle %}
+     {{page.instructtitle4}}
+{% endcapture %}
+{% capture instruct_descrip %}
+     {{page.instructdescription4}}
+{% endcapture %}
+{% capture instruct_git %}
+     {{page.instructgit4}}
+{% endcapture %}
+
+{% include github_proj.html
+     instruct=my_instruct
+     instructtitle=instructtitle
+     instruct_descrip=instruct_descrip
+     instruct_git=instruct_git
+     %}

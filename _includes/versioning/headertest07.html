@@ -1,0 +1,179 @@
+
+<!doctype htm
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title>append demo</title>
+<style>
+#mycontent{
+     display:none;
+}
+</style>
+
+<script type="text/javascript">
+
+     function copyDiv(){
+          CreateHeader();
+      }
+
+     function CreateHeader(){
+               var Myothermark  = document.getElementsByClassName('myfirst')[0];
+               var Myother  = document.getElementById('transferhere');
+               Myother.innerHTML = Myothermark.innerHTML;
+
+               //initialize values from markdown to ter to header
+               var list = Myother.getElementsByTagName("h2")[0];
+               console.log(list);
+               var sub = Myother.getElementsByTagName("h1")[0];
+               console.log(sub);
+               var para = Myother.getElementsByTagName("p")[1];
+               console.log(para);
+
+               //get header
+               var sampledatasection  = document.getElementsByClassName('sampledatasection')[0];
+               console.log(sampledatasection);
+
+               //get elements of header
+               var mainheader = sampledatasection.getElementsByClassName('mainheader')[0];
+               console.log(mainheader);
+
+               var subheader = sampledatasection.getElementsByClassName('subheader')[0];
+               console.log(subheader);
+
+               var myparagraph = sampledatasection.getElementsByClassName('myparagraph')[0];
+               console.log(myparagraph);
+
+               //apply innerHTML of elements
+               mainheader.innerHTML = list.innerHTML;
+               subheader.innerHTML = sub.innerHTML;
+               myparagraph.innerHTML = para.innerHTML;
+
+               var mypiclink = Myother.getElementsByTagName("img")[0].src;
+               console.log(mypiclink);
+               sampledatasection.getElementsByClassName("myimghere")[0].src = mypiclink;
+
+               //create new divs for elements
+               var newdiv = document.createElement("div");
+               newdiv.className = "datasection";
+               console.log(newdiv);
+               var element = document.getElementById("appendhere");
+               newdiv.innerHTML = sampledatasection.innerHTML;
+               element.appendChild(newdiv);
+
+               console.log(element);
+
+               var loopmydivs  = document.getElementsByClassName('myfirst');
+               console.log(loopmydivs.length);
+
+               //turn that into a for loop
+               var i;
+               for(i=0;i < (loopmydivs.length/2); i++){
+                    console.log(i);
+                    //get value of div
+                    var retainme  = document.getElementsByClassName('myfirst')[i];
+                    //initialize values from markdown to ter to header
+                    var looplist = retainme.getElementsByTagName("h2")[0];
+                    console.log(looplist);
+                    var loopsub = retainme.getElementsByTagName("h1")[0];
+                    console.log(loopsub);
+                    var looppara = retainme.getElementsByTagName("p")[1];
+                    console.log(looppara);
+
+
+                    var newdiv = document.createElement("div");
+                    newdiv.className = "datasection";
+                    //console.log(newdiv);
+                    var element = document.getElementById("appendhere");
+                    newdiv.innerHTML = sampledatasection.innerHTML;
+
+                    //assign markdownvalues to new div
+
+                    //get elements of header
+                    var loopmainheader = newdiv.getElementsByClassName('mainheader')[0];
+                    console.log(loopmainheader);
+                    var loopsubheader = newdiv.getElementsByClassName('subheader')[0];
+                    console.log(loopsubheader);
+                    var loopmyparagraph = newdiv.getElementsByClassName('myparagraph')[0];
+                    console.log(loopmyparagraph);
+
+                    //assign new values to header values
+                    loopmainheader.innerHTML = looplist.innerHTML;
+                    console.log(loopmainheader);
+                    loopsubheader.innerHTML = loopsub.innerHTML;
+                    console.log(loopsubheader);
+                    loopmyparagraph.innerHTML = looppara.innerHTML;
+                    console.log(loopmyparagraph);
+
+                    element.appendChild(newdiv);
+
+
+               }
+
+               //newdiv.innerHTML = MainSection[0].innerHTML;
+
+               /*var list = Myothermark[0].getElementsByTagName("h2")[0];
+               var sub = Myothermark[0].getElementsByTagName("h1")[0];
+               var para = Myothermark[0].getElementsByTagName("p")[1];
+               console.log(list);
+
+
+               var mainSection = document.getElementsByClassName('sampledatasection')[0];
+
+               console.log("inner html collected");
+               console.log(mainSection);
+
+               var mainheader = document.getElementById("mainheader");
+               console.log("mainheader");
+               var subheader = document.getElementById("subheader");
+               var myparagraph = document.getElementById("myparagraph");
+
+               console.log("mainheader");
+               mainheader.innerHTML = main.innerHTML;
+               subheader.innerHTML = sub.innerHTML;
+               myparagraph.innerHTML = para.innerHTML;*/
+
+     }
+
+
+
+</script>
+</head>
+<body onload="copyDiv()">
+
+
+
+
+<div class="sampledatasection">
+<section class="page-section clearfix">
+  <div class="container">
+   <div class="intro">
+
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded myimghere" src="TESTHERE" alt="">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+           <h2 class="section-heading mb-4">
+                <span class="section-heading-upper mainheader" style="text-transform: none; color:black">{{ page.header2 }}</span>
+                <span class="section-heading-lower subheader" style="color:black">{{ page.subheader }}</span>
+           </h2>
+
+        <p class="mb-3 myparagraph">{{ page.describe }}</p>
+      </div>
+   </div>
+  </div>
+</section>
+</div>
+
+
+<div id="appendhere">
+</div>
+
+<div id="mycontent">
+{{content}}
+</div>
+
+<div id="transferhere">
+
+</div>
+
+
+     </body>
+</html>

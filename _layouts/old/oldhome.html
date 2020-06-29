@@ -1,0 +1,182 @@
+---
+layout: "wrapper"
+---
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+
+
+
+<section class="page-section clearfix" style = "margin-top:0rem;margin-bottom:5rem">
+<div class="container" style="margin-top:5rem" >
+
+
+	 <div class="col-md-6" style="margin-left: auto; margin-right: auto; margin-bottom: 1.5rem ">
+		  <center><h1 style="color: #00FF85;background-color: black;font-weight: bold;font-family:  -apple-system, BlinkMacSystemFont, “Segoe UI”, Helvetica, “Apple Color Emoji”, Arial, sans-serif, “Segoe UI Emoji”, “Segoe UI Symbol”;font-size:350%"><b>OUR PROJECTS</b></h1></center>
+    	</div>
+
+	<!-- Repalce the content of Introduction of "OUR PROJECTS" here  -->
+	<!-- <center><p style="font-size:30px">(put your content here)</p></center> -->
+	<center><p style="font-size:30px">CEEO INNOVATIONS PROJECTS</p></center>
+	<!--.......................................................................................-->
+
+	<div class="row mb-5 no-gutters" style="margin-top: 4rem">
+
+		<!-- FIRST PROJECT----------------------------------------------------------->
+		<div id="post_holder">
+			{% for post in site.posts %}
+		       <li><a href="{{ post.url }}">{{post.title}}</a><li>
+
+
+			<div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay="100"
+			<!--REPLACE PROJECT LINK HERE -->
+			<!--<a href=(copy and paste the project web link here) class="work-thumb"> -->
+			  <a href="{{post.url}}" class="work-thumb">
+			    <div class="work-text">
+			<!--Change project name here -->
+			<!--<h2>(put your content here)</h2>-->
+			      <h2>{{post.title}}</h2>
+			<!--.......................................................................................-->
+			      <p>CEEO INNOVATIONS</p>
+			    </div>
+			<!-- Repalce project background image here -->
+			<!--<img src=(paste image path here) alt="Image" class="img-fluid" style="max-height: 40%">-->
+			      <img src="{{post.displayimg}}" alt="Image" class="img-fluid" style="max-height: 40%">
+			<!--.......................................................................................-->
+			  </a>
+			</div>
+		 {%endfor%}
+
+		</div>
+
+
+      {% include new_post.html url="/2020/06/11/my-test-page.html"%}
+        <div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay="100">
+		  <!--REPLACE PROJECT LINK HERE -->
+		  <!--<a href=(copy and paste the project web link here) class="work-thumb"> -->
+          <a href="SPIKEPrimeBackpacks.html" class="work-thumb">
+            <div class="work-text">
+				<!--Change project name here -->
+				<!--<h2>(put your content here)</h2>-->
+              <h2>SPIKE Prime BACKPACKS</h2>
+			  <!--.......................................................................................-->
+              <p>CEEO INNOVATIONS</p>
+            </div>
+			  <!-- Repalce project background image here -->
+			  <!--<img src=(paste image path here) alt="Image" class="img-fluid" style="max-height: 40%">-->
+              <img src="web/img/backpack.png" alt="Image" class="img-fluid" style="max-height: 40%">
+			  <!--.......................................................................................-->
+          </a>
+        </div>
+
+		<!-- PROJECT TWO-->
+        <div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay="200">
+		  <!--REPLACE PROJECT LINK HERE -->
+		  <!--<a href=(copy and paste the project web link here) class="work-thumb"> -->
+          <a href="https://ceeoinnovations.github.io/SPIKEPrimePlacemats/" class="work-thumb">
+            <div class="work-text">
+				<!--Change project name here -->
+				<!--<h2>(put your content here)</h2>-->
+              <h2>SPIKE Prime PLACEMATS INSTRUCTIONS</h2>
+				<!--.......................................................................................-->
+              <p>CEEO INNOVATIONS</p>
+            </div>
+			  <!-- Repalce project background image here -->
+			  <!--<img src=(paste image path here) alt="Image" class="img-fluid"-->
+            <img src="web/img/Placemats.jpeg" alt="Image" class="img-fluid">
+			  <!--.......................................................................................-->
+          </a>
+        </div>
+
+		<!-- PROJECT THREE -->
+        <div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay="300">
+		  <!--REPLACE PROJECT LINK HERE -->
+		  <!--<a href=(copy and paste the project web link here) class="work-thumb"> -->
+          <a href="portfolio-single.html" class="work-thumb">
+		  <!--.......................................................................................-->
+            <div class="work-text">
+			<!--Change project name here -->
+			<!--<h2>(put your content here)</h2>-->
+              <h2>Coming Soon</h2>
+		  <!--.......................................................................................-->
+              <p>CEEO INNOVATIONS</p>
+            </div>
+			  <!-- Repalce project background image here -->
+			  <!--<img src=(paste image path here) alt="Image" class="img-fluid">-->
+            <img src="../web/img/comingsoon.jpeg" alt="Image" class="img-fluid">
+          </a>
+        </div>
+
+		<!-- PROJECT FOUR -->
+        <div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay="400">
+		  <!--REPLACE PROJECT LINK HERE -->
+		  <!--<a href=(copy and paste the project web link here) class="work-thumb"> -->
+          <a href="portfolio-single.html" class="work-thumb">
+		  <!--.......................................................................................-->
+            <div class="work-text">
+			<!--Change project name here -->
+			<!--<h2>(put your content here)</h2>-->
+              <h2>EV3</h2>
+			<!--.......................................................................................-->
+              <p>CEEO INNOVATIONS</p>
+            </div>
+		  <!--Repalce project background image here -->
+		  <!--<img src=(paste image path here) alt="Image" class="img-fluid"> -->
+            <img src="web/img/ev3.png" alt="Image" class="img-fluid">
+			<!--.......................................................................................-->
+          </a>
+        </div>
+
+		<!-- PROJECT FIVE -->
+        <div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay="400">
+		  <!--REPLACE PROJECT LINK HERE -->
+		  <!--<a href=(copy and paste the project web link here) class="work-thumb"> -->
+          <a href="portfolio-single.html" class="work-thumb">
+		  <!--.......................................................................................-->
+            <div class="work-text">
+			<!--Change project name here -->
+			<!--<h2>(put your content here)</h2>-->
+              <h2>Coming Soon</h2>
+			<!--.......................................................................................-->
+              <p>CEEO INNOVATIONS</p>
+            </div>
+		  <!--Repalce project background image here -->
+		  <!--<img src=(paste image path here) alt="Image" class="img-fluid"> -->
+            <img src="/web/img/comingsoon.jpeg" alt="Image" class="img-fluid">
+		  <!--.......................................................................................-->
+          </a>
+        </div>
+
+		<!-- PROJECT SIX -->
+        <div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay="400">
+		  <!--REPLACE PROJECT LINK HERE -->
+		  <!--<a href=(copy and paste the project web link here) class="work-thumb"> -->
+          <a href="portfolio-single.html" class="work-thumb">
+		 <!--.......................................................................................-->
+            <div class="work-text">
+			<!--Change project name here -->
+			<!--<h2>(put your content here)</h2>-->
+              <h2>Coming Soon</h2>
+			<!--.......................................................................................-->
+              <p>CEEO INNOVATIONS</p>
+            </div>
+		  <!--Repalce project background image here -->
+		  <!--<img src=(paste image path here) alt="Image" class="img-fluid"> -->
+            <img src="web/img/comingsoon.jpeg" alt="Image" class="img-fluid">
+		  <!--.......................................................................................-->
+          </a>
+        </div>
+
+      </div>
+	</div>
+
+  </section>
+<script type="text/javascript">
+
+</script>
+
+</body>
+
+</html>
