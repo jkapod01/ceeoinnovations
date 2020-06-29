@@ -25,13 +25,13 @@ function CollectAllDivs(){
  */
  function CreateSectionsByDiv(mydivs){
       for (var i = 0; i < mydivs.length; i++){
-           if ( mydivs[i].classList.contains("sitetitle")){
+           if ( mydivs[i].classList.contains("site_title")){
                 CreateSiteTitle(mydivs[i]);
-           } else if ( mydivs[i].classList.contains("video-text-overlay")){
-                console.log("video-text-overlay");
+           } else if ( mydivs[i].classList.contains("video_text_overlay")){
+                console.log("video_text_overlay");
                 CreateHeaderVideo(mydivs[i]);
-           }  else if ( mydivs[i].classList.contains("largeheaderimg")){
-                console.log("largeheaderimg");
+           }  else if ( mydivs[i].classList.contains("image_text_overlay")){
+                console.log("image_text_overlay");
                 CreateHeaderImg(mydivs[i]);
            }else if ( mydivs[i].classList.contains("pdf")){
                 console.log("pdf==========================================================");
@@ -184,7 +184,7 @@ function CreateHeaderVideo(mydivsi){
      mynewiframe.src = myiframe.src;
 
 
-     //append copy to append largeheaderimg
+     //append copy to append image_text_overlay
      var append_div_here = document.getElementById("myappendcontent");
      append_div_here.appendChild(newdiv);
 
@@ -225,7 +225,7 @@ function CreateHeaderImg(mydivsi){
      mynewimg.src = myimg.src;
 
 
-     //append copy to append largeheaderimg
+     //append copy to append image_text_overlay
      var append_div_here = document.getElementById("myappendcontent");
      append_div_here.appendChild(newdiv);
 
@@ -233,7 +233,7 @@ function CreateHeaderImg(mydivsi){
 }
 //CREATE SITE TITLE(S)=======================================================
 
-/* CreateSiteTitle
+/* Createsite_title
 * Create and allocate a site title element
 * Iterates though all markdown elements in the site title div
 * and appends

@@ -2,11 +2,11 @@
 layout: post
 displayimg: web/img/horizontal_paperbots_car.jpeg
 ---
-<div class="sitetitle hjhj" markdown="1">
-# PaperBots Hello
+<div class="site_title" markdown="1">
+# PaperBots
 </div>
 
-<div class="video-text-overlay" markdown="1">
+<div class="video_text_overlay" markdown="1">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KZRW25MjqMQ"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
@@ -20,7 +20,7 @@ wheels, straws, some paperclips and a rubber band.
 </div>
 
 
-<div class="largeheaderimg" markdown="1">
+<div class="image_text_overlay" markdown="1">
 
 ![Link to my pic](../../../web/img/headimagerobot.jpg)
 
