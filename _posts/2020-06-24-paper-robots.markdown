@@ -2,17 +2,19 @@
 layout: posttest
 displayimg: web/img/horizontal_paperbots_car.jpeg
 ---
+
+
+<div class="sitetitle hjhj" markdown="1">
+# PaperBotsHello
+</div>
+
+
 <div class="pdf" markdown="1">
 # PaperBots Cutouts
 [Pull-up man Cutout](../../../web/pf/SPIKE_Silly-Walks_Placemat.pdf)
 [Silly Walks Placemat](../../../web/pf/Pull-Up-Man-Lesson-Plan.pdf)
 [Silly Walks Placemat](../../../web/pf/SPIKE_Silly-Walks_Placemat.pdf)
 </div>
-
-<div class="sitetitle hjhj" markdown="1">
-# PaperBotsHello
-</div>
-
 
 <div class="video-text-overlay" markdown="1">
 
