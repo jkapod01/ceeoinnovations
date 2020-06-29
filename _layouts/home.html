@@ -33,7 +33,7 @@ layout: "wrapper"
 
 	 	 	 <!--REPLACE PROJECT LINK HERE -->
 		 	  <!--<a href=(copy and paste the project web link here) class="work-thumb"> -->
-	  	 	   <a href="{{post.url}}" class="work-thumb">
+	  	 	   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}" class="work-thumb">
 	    	 	    <div class="work-text">
 		 	 <!--Change project name here -->
 	 	 	 <!--<h2>(put your content here)</h2>-->
