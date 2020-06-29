@@ -4,9 +4,9 @@ displayimg: web/img/horizontal_paperbots_car.jpeg
 ---
 <div class="pdf" markdown="1">
 # PaperBots Cutouts
-[Pull-up man Cutout](web/pf/SPIKE_Silly-Walks_Placemat.pdf)
-[Silly Walks Placemat](web/pf/Pull-Up-Man-Lesson-Plan.pdf)
-[Silly Walks Placemat](web/pf/SPIKE_Silly-Walks_Placemat.pdf)
+[Pull-up man Cutout](../../../web/pf/SPIKE_Silly-Walks_Placemat.pdf)
+[Silly Walks Placemat](../../../web/pf/Pull-Up-Man-Lesson-Plan.pdf)
+[Silly Walks Placemat](../../../web/pf/SPIKE_Silly-Walks_Placemat.pdf)
 </div>
 
 <div class="sitetitle hjhj" markdown="1">
@@ -27,7 +27,7 @@ This is a rubberband car is made from a single sheet of paper, 4 styrofoam wheel
 
 <div class="largeheaderimg" markdown="1">
 
-![Link to my pic](web/img/headimagerobot.jpg)
+![Link to my pic](../../../web/img/headimagerobot.jpg)
 
 ## An Inexpensive Option for Engineering Education
 # Accessible Robotics
@@ -37,10 +37,10 @@ The cost of the equipment is a barrier to robotics education for many students. 
 </div>
 <div class="pdf" markdown="1">
 # PaperBots Lesson Plans
-[Hexabot Lesson Plan](web/pf/HexaBot-Lesson-Plan.pdf)
-[Pull Up Man Lesson Plan](web/pf/Pull-Up-Man-Lesson-Plan.pdf)
-[Rubber Band Car Lesson Plan](web/pf/Rubber-Band-Car-Lesson-Plan.pdf)
-[Rube Golberg Lesson Plan](web/pf/Rube-Golberg-Lesson-Plan.pdf)
+[Hexabot Lesson Plan](../../../web/pf/HexaBot-Lesson-Plan.pdf)
+[Pull Up Man Lesson Plan](../../../web/pf/Pull-Up-Man-Lesson-Plan.pdf)
+[Rubber Band Car Lesson Plan](../../../web/pf/Rubber-Band-Car-Lesson-Plan.pdf)
+[Rube Golberg Lesson Plan](../../../web/pf/Rube-Golberg-Lesson-Plan.pdf)
 
 </div>
 
