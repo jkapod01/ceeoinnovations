@@ -1,0 +1,147 @@
+<div class="container" style="margin-top:5rem" >
+	    <div class="row">
+      <div class="col-md-8 mb-5" style="border-style:none">
+		<!-- Replace the "HOW TO CUSTOMIZE SPIKE™ Prime" content here-->
+		<!-- <h2 style= "color:rgba(0,0,0,1.00)"><b>(put your content here)</b></h2> -->
+		<!-- ........................................................-->
+        <h2 style= "color:rgba(0,0,0,1.00)"><b>HOW TO CUSTOMIZE SPIKE™ Prime</b></h2>
+		<!-- ........................................................-->
+        <hr>
+      </div>
+    </div>
+
+	<!-- PROJECTS -- FIRST ROW -->
+	<div class="row">
+		<!-- PROJECT 1-->
+		{% capture my_instruct %}
+			{{page.instruct1}}
+		{% endcapture %}
+		{% capture instructtitle %}
+			{{page.instructtitle1}}
+		{% endcapture %}
+		{% capture instruct_descrip %}
+			{{page.instructdescription1}}
+		{% endcapture %}
+		{% capture instruct_git %}
+			{{page.instructgit1}}
+		{% endcapture %}
+
+		{% include github_proj.html
+			instruct=my_instruct
+			instructtitle=instructtitle
+			instruct_descrip=instruct_descrip
+			instruct_git=instruct_git
+			%}
+
+		<!-- FIRST ROW -- PROJECT2 -->
+		<!-- PROJECT 1-->
+
+		{% capture my_instruct %}
+			{{page.instruct2}}
+		{% endcapture %}
+		{% capture instructtitle %}
+			{{page.instructtitle2}}
+		{% endcapture %}
+		{% capture instruct_descrip %}
+			{{page.instructdescription2}}
+		{% endcapture %}
+		{% capture instruct_git %}
+			{{page.instructgit2}}
+		{% endcapture %}
+
+		{% include github_proj.html
+			instruct=my_instruct
+			instructtitle=instructtitle
+			instruct_descrip=instruct_descrip
+			instruct_git=instruct_git
+			%}
+
+		<!-- FIRST ROW -- PROJECT3 -->
+		{% capture my_instruct %}
+			{{page.instruct3}}
+		{% endcapture %}
+		{% capture instructtitle %}
+			{{page.instructtitle3}}
+		{% endcapture %}
+		{% capture instruct_descrip %}
+			{{page.instructdescription3}}
+		{% endcapture %}
+		{% capture instruct_git %}
+			{{page.instructgit3}}
+		{% endcapture %}
+
+		{% include github_proj.html
+			instruct=my_instruct
+			instructtitle=instructtitle
+			instruct_descrip=instruct_descrip
+			instruct_git=instruct_git
+			%}
+
+    </div>
+	<!-- PROJECTS -- SECOND ROW -------------------------------------------------------------->
+	<div class="row">
+		<!-- SECOND ROW -- PROJECT1-->
+		{% capture my_instruct %}
+			{{page.instruct4}}
+		{% endcapture %}
+		{% capture instructtitle %}
+			{{page.instructtitle4}}
+		{% endcapture %}
+		{% capture instruct_descrip %}
+			{{page.instructdescription4}}
+		{% endcapture %}
+		{% capture instruct_git %}
+			{{page.instructgit4}}
+		{% endcapture %}
+
+		{% include github_proj.html
+			instruct=my_instruct
+			instructtitle=instructtitle
+			instruct_descrip=instruct_descrip
+			instruct_git=instruct_git
+			%}
+
+		<!-- SECOND ROW -- PEOJECT2 -->
+		{% capture my_instruct %}
+			{{page.instruct5}}
+		{% endcapture %}
+		{% capture instructtitle %}
+			{{page.instructtitle5}}
+		{% endcapture %}
+		{% capture instruct_descrip %}
+			{{page.instructdescription5}}
+		{% endcapture %}
+		{% capture instruct_git %}
+			{{page.instructgit5}}
+		{% endcapture %}
+
+		{% include github_proj.html
+			instruct=my_instruct
+			instructtitle=instructtitle
+			instruct_descrip=instruct_descrip
+			instruct_git=instruct_git
+			%}
+
+		<!-- SECOND ROW -- PEOJECT3 -->
+		{% capture my_instruct %}
+			{{page.instruct6}}
+		{% endcapture %}
+		{% capture instructtitle %}
+			{{page.instructtitle6}}
+		{% endcapture %}
+		{% capture instruct_descrip %}
+			{{page.instructdescription6}}
+		{% endcapture %}
+		{% capture instruct_git %}
+			{{page.instructgit6}}
+		{% endcapture %}
+
+		{% include github_proj.html
+			instruct=my_instruct
+			instructtitle=instructtitle
+			instruct_descrip=instruct_descrip
+			instruct_git=instruct_git
+			%}
+
+    	</div>
+</div>
