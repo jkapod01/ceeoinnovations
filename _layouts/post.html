@@ -1,18 +1,30 @@
 ---
 layout: "wrapper"
 ---
-<!-- Page title ------------------------------------------------->
-     {% include myposttitle.html %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+          <meta charset="utf-8">
+          <title></title>
+
+     </head>
+
+<body>
+     <!-- DO NOT DELETE, IMPORT OF MARKDOWN ---------------------------------->
+          {% include include_content.html %}
+
+          {% include myposttitle.html %}
 <!-- Header for page Heading ---------------------------------->
-     {% include header.html %}
+          {% include headertest.html %}
+<!-- Video Overlay---------------------------------->
+          {% include videooverlay.html %}
 <!-- Page Heading ---------------------------------->
-     {% if page.github == true%}
-          {% include headproject.html %}
-     {% endif %}
- <!-- Links to Instructables/Github for projects ---------------------------------->
-     {% if page.github == true%}
-          {% include projects.html%}
-     {% endif %}
+          {% include pdfinclude.html %}
  <!-- Blog Post ---------------------------------->
 
-     {% include blogcontent.html%}
+
+
+
+
+</body>
+</html>

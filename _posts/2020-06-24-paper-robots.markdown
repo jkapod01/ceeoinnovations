@@ -1,5 +1,5 @@
 ---
-layout: posttest
+layout: post
 displayimg: web/img/horizontal_paperbots_car.jpeg
 ---
 <div class="sitetitle hjhj" markdown="1">

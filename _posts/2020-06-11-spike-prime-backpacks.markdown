@@ -1,5 +1,5 @@
 ---
-layout: posttest
+layout: post
 displayimg: web/img/backpack2.png
 
 header2: LEGO SPIKE™ Prime
