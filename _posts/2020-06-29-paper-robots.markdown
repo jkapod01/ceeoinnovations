@@ -3,6 +3,7 @@ layout: post
 displayimg: web/img/horizontal_paperbots_car.jpeg
 ---
 <div class="site_title" markdown="1">
+<<<<<<< HEAD:_posts/2020-06-29-paper-robots.markdown
 # PaperBots
 
 </div>
@@ -15,6 +16,9 @@ displayimg: web/img/horizontal_paperbots_car.jpeg
 PaperBots provide a low cost method of creating educational robots for
 any age.
 
+=======
+# PaperBots Is  My Project
+>>>>>>> 63b93069736ff28fb8d1afe7382febf5f1bdfa98:_posts/2020-06-24-paper-robots.markdown
 </div>
 
 <div class="video_text_overlay" markdown="1">
