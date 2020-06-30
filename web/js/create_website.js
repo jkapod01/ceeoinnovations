@@ -103,8 +103,8 @@ function CreatePdfGrid(pdfcontain, mydivsi, mylinkarrayPI){
           var mypdftitle = mylinkarrayPI[i].innerHTML;
           newdivPI.getElementsByClassName("pdfheader")[0].innerHTML =mypdftitle;
           //copy link to button and iframe
-          AddHrefSRCtoNewDiv("mypdf", 0, mylinkarrayPI[i], newdivPI);
-          AddHreftoNewDiv("click-to-download", 0, mylinkarrayPI[i], newdivPI);
+          AddHrefSRCtoNewDiv_Prepend("mypdf", 0, mylinkarrayPI[i], newdivPI);
+          AddHreftoNewDiv_Prepend("click-to-download", 0, mylinkarrayPI[i], newdivPI);
 
           //Create new div that copies append here to append content to
           pdfcontain.append(newdivPI);
@@ -143,6 +143,21 @@ function AddHrefSRCtoNewDiv(get_class, at_place, copy_this_data, search_here){
 }
 function AddHreftoNewDiv(get_class, at_place, copy_this_data, search_here){
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
+     copyhere.href = copy_this_data.href;
+     return copyhere;
+}
+
+function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
+     var copyhere = search_here.getElementsByClassName(get_class)[at_place];
+     $(copy_this_data).attr('href' , "../web/pdf/" + $(copy_this_data).attr('href'));
+
+     copyhere.src = copy_this_data.href;
+     return copyhere;
+}
+function AddHreftoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
+     var copyhere = search_here.getElementsByClassName(get_class)[at_place];
+     $(copy_this_data).attr('href' , "../web/pdf/" + $(copy_this_data).attr('href'));
+
      copyhere.href = copy_this_data.href;
      return copyhere;
 }
@@ -219,8 +234,9 @@ function CreateHeaderImg(mydivsi){
      mainheader.innerHTML = myh2.innerHTML;
      subheader.innerHTML = myh1.innerHTML;
      myparagraph.innerHTML = myp.innerHTML;
+     $(myimg).attr('src' , "../web/img/" + $(myimg).attr('src'));
+     console.log(myimg.src)
      mynewimg.src = myimg.src;
-
 
      //append copy to append image_text_overlay
      var append_div_here = document.getElementById("myappendcontent");

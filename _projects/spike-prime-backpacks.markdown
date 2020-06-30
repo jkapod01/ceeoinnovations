@@ -1,6 +1,6 @@
 ---
 layout: post
-displayimg: web/img/backpack2.png
+displayimg: backpack2.png
 
 header2: LEGO SPIKE™ Prime
 subheader: Creative & Inspiring

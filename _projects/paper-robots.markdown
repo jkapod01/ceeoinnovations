@@ -1,13 +1,13 @@
 ---
 layout: post
-displayimg: web/img/horizontal_paperbots_car.jpeg
+displayimg: horizontal_paperbots_car.jpeg
 ---
 <div class="site_title" markdown="1">
 # PaperBots
 </div>
 
 <div class="image_text_overlay" markdown="1">
-![Link to my pic](../web/img/headimagerobot.jpg)
+![Link to my pic](headimagerobot.jpg)
 ## An Inexpensive Option for Engineering Education
 # Accessible Robotics
 PaperBots provide a low cost method of creating educational robots for
@@ -28,7 +28,7 @@ wheels, straws, some paperclips and a rubber band.
 
 <div class="pdf" markdown="1">
 # PaperBots Cutouts
-[Pull-up man Cutout](../web/pf/SPIKE_Silly-Walks_Placemat.pdf)
-[Silly Walks Placemat](../web/pf/Pull-Up-Man-Lesson-Plan.pdf)
-[Silly Walks Placemat](../web/pf/SPIKE_Silly-Walks_Placemat.pdf)
+[Pull-up man Cutout](SPIKE_Silly-Walks_Placemat.pdf)
+[Silly Walks Placemat](Pull-Up-Man-Lesson-Plan.pdf)
+[Silly Walks Placemat](SPIKE_Silly-Walks_Placemat.pdf)
 </div>
