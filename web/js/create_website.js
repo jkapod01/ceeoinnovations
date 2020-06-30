@@ -218,7 +218,10 @@ function CreateHeaderImg(mydivsi){
      var myh1 = CheckifVoidandAssign_Gen("h1", 0, mydivsi);
      var myh2 = CheckifVoidandAssign_Gen("h2", 0, mydivsi);
      var myp = CheckifVoidandAssign_P_Gen(mydivsi);
+     console.log("Where");
      var myimg = CheckifVoidandAssign_Img_Gen(0, mydivsi);
+     $(myimg).attr('src' , "../web/img/" + $(myimg).attr('src'));
+
 
      //create new div and copy sample data
      var newdiv = document.createElement("div");
@@ -234,8 +237,7 @@ function CreateHeaderImg(mydivsi){
      mainheader.innerHTML = myh2.innerHTML;
      subheader.innerHTML = myh1.innerHTML;
      myparagraph.innerHTML = myp.innerHTML;
-     $(myimg).attr('src' , "../web/img/" + $(myimg).attr('src'));
-     console.log(myimg.src)
+     console.log(myimg.src);
      mynewimg.src = myimg.src;
 
      //append copy to append image_text_overlay
