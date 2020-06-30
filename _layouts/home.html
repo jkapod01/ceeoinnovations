@@ -48,23 +48,23 @@ layout: "wrapper"
 
 		<!-- FIRST PROJECT----------------------------------------------------------->
 
-			{% for post in site.posts %}
+			{% for project in site.projects %}
 
 		  	<div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay="100">
 
 	 	 	 <!--REPLACE PROJECT LINK HERE -->
 		 	  <!--<a href=(copy and paste the project web link here) class="work-thumb"> -->
-	  	 	   <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}" class="work-thumb">
+	  	 	   <a href="{{ project.url | prepend: site.baseurl | replace: '//', '/' }}" class="work-thumb">
 	    	 	    <div class="work-text">
 		 	 <!--Change project name here -->
 	 	 	 <!--<h2>(put your content here)</h2>-->
-	 	 	      <h2>{{post.title}}</h2>
+	 	 	      <h2>{{project.title}}</h2>
 	   		 <!--.......................................................................................-->
 	 	 	      <p>CEEO INNOVATIONS</p>
 	  		     </div>
 	 		 <!-- Repalce project background image here -->
 	 	 	<!--<img src=(paste image path here) alt="Image" class="img-fluid" style="max-height: 40%">-->
-				<img src="{{post.displayimg}}" alt="Image" class="img-fluid" style=" border-color:rgba(246,245,245,1); max-height: 40%; width: 100%">
+				<img src="{{project.displayimg}}" alt="Image" class="img-fluid" style=" border-color:rgba(246,245,245,1); max-height: 40%; width: 100%">
 	  	 	<!--.......................................................................................-->
 	 		   </a>
 			  </div>

@@ -4,6 +4,17 @@ displayimg: web/img/horizontal_paperbots_car.jpeg
 ---
 <div class="site_title" markdown="1">
 # PaperBots
+
+</div>
+<div class="image_text_overlay" markdown="1">
+
+![Link to my pic](../../../web/img/headimagerobot.jpg)
+
+## An Inexpensive Option for Engineering Education
+# Accessible Robotics
+PaperBots provide a low cost method of creating educational robots for
+any age.
+
 </div>
 
 <div class="video_text_overlay" markdown="1">
@@ -17,19 +28,6 @@ picture-in-picture" allowfullscreen></iframe>
 
 This is a rubberband car is made from a single sheet of paper, 4 styrofoam
 wheels, straws, some paperclips and a rubber band.
-</div>
-
-
-<div class="image_text_overlay" markdown="1">
-
-![Link to my pic](../../../web/img/headimagerobot.jpg)
-
-## An Inexpensive Option for Engineering Education
-# Accessible Robotics
-
-The cost of the equipment is a barrier to robotics education for many students.
-To combat these financial barriers to STEM education, PaperBots only require
-paper and low cost hardware to build, so offers a low-cost approach to robotics.
 </div>
 
 <div class="pdf" markdown="1">

@@ -28,13 +28,10 @@ function CollectAllDivs(){
            if ( mydivs[i].classList.contains("site_title")){
                 CreateSiteTitle(mydivs[i]);
            } else if ( mydivs[i].classList.contains("video_text_overlay")){
-                console.log("video_text_overlay");
                 CreateHeaderVideo(mydivs[i]);
            }  else if ( mydivs[i].classList.contains("image_text_overlay")){
-                console.log("image_text_overlay");
                 CreateHeaderImg(mydivs[i]);
            }else if ( mydivs[i].classList.contains("pdf")){
-                console.log("pdf==========================================================");
                  console.log(i);
                CreateHeaderPI(mydivs[i]);
 
