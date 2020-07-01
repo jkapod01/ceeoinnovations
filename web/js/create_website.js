@@ -178,7 +178,7 @@ function CreateHeaderVideo(mydivsi){
      var myh1 = CheckifVoidandAssign_Gen("h1", 0, mydivsi);
      var myh2 = CheckifVoidandAssign_Gen("h2", 0, mydivsi);
      var myp = CheckifVoidandAssign_P_Gen(mydivsi);
-     //var myiframe = CheckifVoidandAssign_Vid_Gen(0, mydivsi);
+     var myiframe = CheckifVoidandAssign_Vid_Gen(0, mydivsi);
 
      //create new div and copy sample data
      var newdiv = document.createElement("div");
@@ -188,13 +188,13 @@ function CreateHeaderVideo(mydivsi){
      var mainheader = newdiv.getElementsByClassName('mainheaderVO')[0];
      var subheader = newdiv.getElementsByClassName('subheaderVO')[0];
      var myparagraph = newdiv.getElementsByClassName('myparagraphVO')[0];
-     //var mynewiframe = newdiv.getElementsByClassName('myiframehere')[0];
+     var mynewiframe = newdiv.getElementsByClassName('myiframehere')[0];
 
      //reassign with markdown values
      mainheader.innerHTML = myh2.innerHTML;
      subheader.innerHTML = myh1.innerHTML;
      myparagraph.innerHTML = myp.innerHTML;
-     //mynewiframe.src = myiframe.src;
+     mynewiframe.src = myiframe.src;
 
 
      //append copy to append image_text_overlay
