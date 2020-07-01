@@ -29,14 +29,3 @@ section and change the content.
 [Top Secret](Pull-Up-Man-Lesson-Plan.pdf)
 [Not Top Secret](HexaBot-Lesson-Plan.pdf)
 </div>
-
-
-<div class="video_text_overlay" markdown="1">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KZRW25MjqMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## PaperBots Robot
-# Rubber-band Car
-
-This is a rubberband car is made from a single sheet of paper, 4 styrofoam wheels, straws, some paperclips and a rubber band.
-</div>

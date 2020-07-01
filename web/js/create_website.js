@@ -15,6 +15,7 @@ function CreateWebMain(){
 */
 function CollectAllDivs(){
      var mycontent = document.getElementById("mycontent");
+     console.log(mycontent);
      var mydivs =  mycontent.getElementsByTagName("div");
      return mydivs;
 }
