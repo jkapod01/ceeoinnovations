@@ -10,6 +10,7 @@ layout: "wrapper"
      </head>
 
 <body>
+
      <!-- DO NOT DELETE, IMPORT OF MARKDOWN ---------------------------------->
           {% include include_content.html %}
 
@@ -20,8 +21,14 @@ layout: "wrapper"
           {% include pdf_include.html %}
 
 <!-- Video Overlay---------------------------------->
-<script src="../web/js/create_video.js"></script>
-{% include video_overlay.html %}
+     <script src="../web/js/create_video.js"></script>
+     {% include video_overlay.html %}
+
+     <!--Allison's helper functions for appending content-->
+     <script src="../web/js/create_website.js"></script>
+
+     <script src="../web/js/append_helper_functions.js"></script>
+     <script>CreateWebMain();</script>
 
 
 

@@ -2,7 +2,6 @@
 * Allison Moore
 * 6/27/20
 */
-CreateWebMain();
 function CreateWebMain(){
      console.log("Create Web");
      var mydivs = CollectAllDivs();
