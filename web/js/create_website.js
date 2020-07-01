@@ -2,11 +2,12 @@
 * Allison Moore
 * 6/27/20
 */
-
+CreateWebMain();
 function CreateWebMain(){
      console.log("Create Web");
      var mydivs = CollectAllDivs();
      CreateSectionsByDiv(mydivs);
+     CreateVideoMain();
 }
 
 /*CollectAllDivs
@@ -28,9 +29,7 @@ function CollectAllDivs(){
       for (var i = 0; i < mydivs.length; i++){
            if ( mydivs[i].classList.contains("site_title")){
                 CreateSiteTitle(mydivs[i]);
-           } else if ( mydivs[i].classList.contains("video_text_overlay")){
-                CreateHeaderVideo(mydivs[i]);
-           }  else if ( mydivs[i].classList.contains("image_text_overlay")){
+           } else if ( mydivs[i].classList.contains("image_text_overlay")){
                 CreateHeaderImg(mydivs[i]);
            }else if ( mydivs[i].classList.contains("pdf")){
                  console.log(i);

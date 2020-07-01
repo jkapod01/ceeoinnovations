@@ -5,8 +5,8 @@
 
 function CreateVideoMain(){
      console.log("Create Videos");
-     var mydivs = CollectAllDivs();
-     CreateSectionsByDiv(mydivs);
+     var mydivs = CollectAllVideoDivs();
+     CreateSectionsByVideoDiv(mydivs);
 }
 
 /*CollectAllDivs
