@@ -2,6 +2,7 @@
 layout: post
 displayimg: PaperBotsLogo.png
 ---
+
 <div class="sitetitle" markdown="1">
 # PaperBots
 </div>
@@ -13,18 +14,25 @@ displayimg: PaperBotsLogo.png
 PaperBots is a project to do interactive lowcost robotics just using paper.
 </div>
 
-
+<!--
 <div class="video-text-overlay" markdown="1">
-<!--PASTE AN IFRAME LINK HERE-->
+!--PASTE AN IFRAME LINK HERE--
 ## YOUR VIDEO SUBTITLE
 # YOUR VIDEO TITLE
 THIS IS WHERE YOU CAN WRITE A DESCRIPTION ABOUT YOUR VIDEO.
 </div>
-
+-->
 
 <div class="pdf" markdown="1">
-# TITLE OF PDF SECTION
-[TITLE OF PDF](---NAME OF PDF FILE--.pdf)
-[TITLE OF PDF](---NAME OF PDF FILE--.pdf)
-<!-- insert as many links here as you want to dynamically create a grid of pdfs-->
+# Example Lessons
+[Advertisement](PaperbotsFlyer1.pdf)
+[Pull Up Man](Pull-Up-Man-Lesson-Plan.pdf)
 </div>
+
+<div class="pdf" markdown="1">
+# Additional Resources
+[Cutout](PUMan_Cutout.pdf)
+[HexaBot](HexaBot-Lesson-Plan.pdf)
+</div>
+
+WHAT ABOUT FLOATING TEXT?
