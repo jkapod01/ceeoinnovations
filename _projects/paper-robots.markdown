@@ -5,6 +5,8 @@ displayimg: horizontal_paperbots_car.jpeg
 
 <div class="site_title" markdown="1">
 # PaperBots
+# made of paper
+#tons of paper
 </div>
 
 <div class="image_text_overlay" markdown="1">
