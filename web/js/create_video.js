@@ -48,7 +48,13 @@ function Video_CreateHeaderVideo(mydivsi){
      var myh1 = CheckifVoidandAssign_Gen("h1", 0, mydivsi);
      var myh2 = CheckifVoidandAssign_Gen("h2", 0, mydivsi);
      var myp = CheckifVoidandAssign_P_Gen(mydivsi);
-     var myiframe = CheckifVoidandAssign_Vid_Gen(0, mydivsi);
+
+
+     var mypicturelink = CheckifVoidandAssign_Gen("a", 0, mydivsi);
+     var my_youtube_code = mypicturelink.href.replace('https://youtu.be/', '');
+     var my_youtube_description = mypicturelink.innerHTML;
+
+     console.log(my_youtube_code);
 
      //create new div and copy sample data
      var newdiv = document.createElement("div");
@@ -64,8 +70,41 @@ function Video_CreateHeaderVideo(mydivsi){
      mainheader.innerHTML = myh2.innerHTML;
      subheader.innerHTML = myh1.innerHTML;
      myparagraph.innerHTML = myp.innerHTML;
-     mynewiframe.src = myiframe.src;
 
+     //getinnerhtml of newsrcdoc
+     var newsrcdoc = document.getElementById('newsrcdoc');
+     var newsrcdoc_a = newsrcdoc.getElementsByTagName("a")[0];
+     var newsrcdoc_img = newsrcdoc.getElementsByTagName("img")[0];
+
+     //mypicturelink
+     var myfullpicturelink = document.createElement("p");
+     myfullpicturelink.innerHTML = my_youtube_code;
+     $(myfullpicturelink).prepend("https://www.youtube.com/embed/");
+     $(myfullpicturelink).append("?autoplay=1");
+
+     //myimglink
+     var myfullimglink = document.createElement("p");
+     myfullimglink.innerHTML = my_youtube_code;
+     $(myfullimglink).prepend("https://img.youtube.com/vi/");
+     $(myfullimglink).append("/hqdefault.jpg");
+
+     //correctedlinks
+     newsrcdoc_a.href = myfullpicturelink.innerHTML;
+     newsrcdoc_img.src = myfullimglink.innerHTML;
+     newsrcdoc_img.alt = my_youtube_description;
+
+
+     console.log(newsrcdoc_a);
+     console.log(newsrcdoc_img);
+     console.log(newsrcdoc);
+
+
+
+     newsrcdoc.setAttribute("srcdoc", "demoValue");
+     mynewiframe.srcdoc = newsrcdoc.innerHTML;
+
+
+     console.log(mynewiframe);
 
      //append copy to append image_text_overlay
      var append_div_here = document.getElementById("myappendcontent");
