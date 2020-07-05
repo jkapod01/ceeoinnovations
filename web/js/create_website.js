@@ -148,14 +148,18 @@ function AddHreftoNewDiv(get_class, at_place, copy_this_data, search_here){
 
 function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
-     $(copy_this_data).attr('href' , "../web/pdf/" + $(copy_this_data).attr('href'));
+    $(copy_this_data).attr('href' , "../web/pdf/" + $(copy_this_data).attr('href'));
 
      copyhere.src = copy_this_data.href;
      return copyhere;
 }
 function AddHreftoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
+<<<<<<< HEAD
      //$(copy_this_data).attr('href' , "../web/pdf/" + $(copy_this_data).attr('href'));
+=======
+    // $(copy_this_data).attr('href' , "../web/pdf/" + $(copy_this_data).attr('href'));
+>>>>>>> 10f9aad3028e5431a4d694829bf8d67bcc5e94e0
 
      copyhere.href = copy_this_data.href;
      return copyhere;
