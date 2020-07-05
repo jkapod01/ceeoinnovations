@@ -6,7 +6,6 @@ function CreateWebMain(){
      console.log("Create Web");
      var mydivs = CollectAllDivs();
      CreateSectionsByDiv(mydivs);
-     CreateVideoMain();
 }
 
 /*CollectAllDivs
@@ -34,12 +33,90 @@ function CollectAllDivs(){
                  console.log(i);
                CreateHeaderPI(mydivs[i]);
 
-           } else {
+          }  else if ( mydivs[i].classList.contains("video_text_overlay")){
+                 Video_CreateHeaderVideo(mydivs[i]);
+            }    else {
                 console.log("Div does not have a valid value");
            }
 
       }
 }
+//CREATE VIDEO WITH TEXT=======================================================
+/*CreateVideoHeader
+* Create and allocate a header video section
+* collects image link, sub header, header, and description, if existing
+*
+*/
+function Video_CreateHeaderVideo(mydivsi){
+     //collect the template for header img
+     var sampledatasection  = document.getElementsByClassName('sampledatasectionVO')[0];
+
+
+     //collect tag elements from div
+     var myh1 = CheckifVoidandAssign_Gen("h1", 0, mydivsi);
+     var myh2 = CheckifVoidandAssign_Gen("h2", 0, mydivsi);
+     var myp = CheckifVoidandAssign_P_Gen(mydivsi);
+
+
+     var mypicturelink = CheckifVoidandAssign_Gen("a", 0, mydivsi);
+     var my_youtube_code = mypicturelink.href.replace('https://youtu.be/', '');
+     var my_youtube_description = mypicturelink.innerHTML;
+
+     console.log(my_youtube_code);
+
+     //create new div and copy sample data
+     var newdiv = document.createElement("div");
+     newdiv.innerHTML = sampledatasection.innerHTML;
+
+     //get sections of old div
+     var mainheader = newdiv.getElementsByClassName('mainheaderVO')[0];
+     var subheader = newdiv.getElementsByClassName('subheaderVO')[0];
+     var myparagraph = newdiv.getElementsByClassName('myparagraphVO')[0];
+     var mynewiframe = newdiv.getElementsByClassName('myiframehere')[0];
+
+     //reassign with markdown values
+     mainheader.innerHTML = myh2.innerHTML;
+     subheader.innerHTML = myh1.innerHTML;
+     myparagraph.innerHTML = myp.innerHTML;
+
+     //getinnerhtml of newsrcdoc
+     var newsrcdoc = document.getElementById('newsrcdoc');
+     var newsrcdoc_a = newsrcdoc.getElementsByTagName("a")[0];
+     var newsrcdoc_img = newsrcdoc.getElementsByTagName("img")[0];
+
+     //mypicturelink
+     var myfullpicturelink = document.createElement("p");
+     myfullpicturelink.innerHTML = my_youtube_code;
+     $(myfullpicturelink).prepend("https://www.youtube.com/embed/");
+     $(myfullpicturelink).append("?autoplay=1");
+
+     //myimglink
+     var myfullimglink = document.createElement("p");
+     myfullimglink.innerHTML = my_youtube_code;
+     $(myfullimglink).prepend("https://img.youtube.com/vi/");
+     $(myfullimglink).append("/hqdefault.jpg");
+
+     //correctedlinks
+     newsrcdoc_a.href = myfullpicturelink.innerHTML;
+     newsrcdoc_img.src = myfullimglink.innerHTML;
+     newsrcdoc_img.alt = my_youtube_description;
+
+
+
+
+     newsrcdoc.setAttribute("srcdoc", "demoValue");
+     mynewiframe.srcdoc = newsrcdoc.innerHTML;
+
+
+     console.log(mynewiframe);
+
+     //append copy to append image_text_overlay
+     var append_div_here = document.getElementById("myappendcontent");
+     append_div_here.appendChild(newdiv);
+
+
+}
+
 //CREATE PDF=======================================================
 function CreateHeaderPI(mydivsi){
                //initialize values from markdown to ter to header
