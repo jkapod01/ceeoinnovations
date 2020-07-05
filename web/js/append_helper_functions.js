@@ -54,10 +54,12 @@ function CheckifVoidandAssign_Gen(datatype,dataplace, mydivsi){
 function CheckifVoidandAssign_P_Gen(mydivsi){
      var looplistVO;
      var setlooplistVOpic = mydivsi.getElementsByTagName("img")[0];
+     var setlooplistVOlink = mydivsi.getElementsByTagName("a")[0];
 
-     if(typeof(setlooplistVOpic) == 'undefined' || setlooplistVO == 'null'){
+     if(typeof(setlooplistVOpic) == 'undefined' && typeof(setlooplistVOlink) == 'undefined'){
           var setlooplistVO = mydivsi.getElementsByTagName("p")[0];
      } else {
+
           var setlooplistVO = mydivsi.getElementsByTagName("p")[1];
      }
 
@@ -116,6 +118,9 @@ function CheckifVoidandAssign_Img_Gen(dataplace, mydivsi){
 
      return looplist;
 }
+
+
+
 /* CheckifVoidandAssign_Vid
 * Checks if Vid Value is void
 * REturns image if it exists or a void value

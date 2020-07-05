@@ -11,6 +11,8 @@ displayimg: horizontal_paperbots_car.jpeg
 ![Link to my pic](headimagerobot.jpg)
 ## An Inexpensive Option for Engineering Education
 # Accessible Robotics
+PaperBots provide a low cost method of
+creating educational robots for any age.
 </div>
 
 
@@ -32,8 +34,7 @@ section and change the content.
 
 
 <div class="video_text_overlay" markdown="1">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KZRW25MjqMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Allison's Favorite PDF](https://youtu.be/PQnhigbI4g4)
 
 ## PaperBots Robot
 # Rubber-band Car

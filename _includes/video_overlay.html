@@ -4,7 +4,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <title>append demo</title>
 <style>
-#transferhereVO .sampledatasectionVO{
+#newsrcdoc, #transferhereVO .sampledatasectionVO{
      display:none;
 }
 .video-container {
@@ -91,6 +91,7 @@
         cursor: pointer;
     }
 
+
 </style>
 
 </head>
@@ -103,7 +104,7 @@
 
 <div class="video-container-container">
      <div class="video-container">
-           <iframe  class="intro-vid img-fluid mb-3 mb-lg-0 rounded myiframehere"  src="https://www.youtube.com/embed/uXMQn6dbxc4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <iframe  class="intro-vid img-fluid mb-3 mb-lg-0 rounded myiframehere"  src="https://www.youtube.com/embed/uXMQn6dbxc4"   srcdoc="" allowfullscreen></iframe>
      </div>
 </div>
 
@@ -120,7 +121,12 @@
 </section>
 </div>
 
+<div id = "newsrcdoc">
 
+     <a style="padding:0;margin:0;overflow:hidden;height:100%" href=https://www.youtube.com/embed/Y8Wp3dafaMQ?autoplay=1>
+     <img style="padding:0;margin:0;overflow:hidden;height:100%;position:absolute;width:100%;top:0;bottom:0;margin:auto"src=https://img.youtube.com/vi/Y8Wp3dafaMQ/hqdefault.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'>
+     <span style="position:absolute;width:100%;top:0;bottom:0;margin:auto;height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black">▶</span></a>
+</div>
 
      </body>
 </html>
