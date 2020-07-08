@@ -30,6 +30,46 @@ section and change the content.
 2. is
 3. fun
 
+- jhkh
+- kjhkjhk
+- kjhkjhkjh
+
+```
+}
+.free_write_content{
+     align:center;
+     font-family: "Roboto Mono", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+     width:65%;
+}
+.imgOnly{
+     text-align:center;
+}
+
+.free_write_content h2{
+     text-align: center;
+}
+.free_write_content h3,
+.free_write_content h4,
+.free_write_content h5,
+.free_write_content h6 {
+     text-align: left;
+     font-weight: 400;
+}
+.free_write_content h2 {
+     font-weight: 300;
+}
+.free_write_content h1 {
+     text-align:center;
+     font-weight: 500;
+}
+.imgOnly img{
+      box-shadow: 2px 2px 5px grey;
+      width: 95%;
+}
+
+```
+
+
 
 ### my sub sub head
 
