@@ -31,23 +31,63 @@ function CollectAllDivs(){
                 CreateHeaderImg(mydivs[i]);
            }else if ( mydivs[i].classList.contains("pdf")){
                  console.log(i);
-               CreateHeaderPI(mydivs[i]);
+               CreatePDFs(mydivs[i]);
 
           }  else if ( mydivs[i].classList.contains("video_text_overlay")){
-                 Video_CreateHeaderVideo(mydivs[i]);
-            }    else {
+                 CreateHeaderVideo(mydivs[i]);
+          }    else if ( mydivs[i].classList.contains("free_write")){
+                 CreateFreeWrite(mydivs[i]);
+          }  else {
                 console.log("Div does not have a valid value");
            }
 
       }
 }
+//CREATEFREEWRITE==============================================================
+/*CreateFreeWrite
+* Create and allocate a free_write section
+* collects all markdown and just slaps it in there
+*
+*/
+
+function CreateFreeWrite(mydivsi){
+
+     var sampledatasection= document.getElementsByClassName('free_write_content_container')[0];
+
+     //make and append a copy of sample data section
+     var newdiv = document.createElement("div");
+     newdiv = sampledatasection;
+     newdiv.getElementsByClassName('free_write_content')[0].innerHTML = mydivsi.innerHTML;
+     console.log(mydivsi);
+     var myimages = newdiv.getElementsByTagName("img");
+     for (var i = 0; i < myimages.length; i++){
+          $(myimages[i]).attr('src' , "../web/img/" + $(myimages[i]).attr('src'));
+          $(myimages[i]).attr('style' , "justify-content:center;text-align:center;float:center;");
+
+     }
+
+     $('.free_write_content p').each(function(i){          // For each paragraph
+    if ( ($(this).find('img').length) &&     // If there's an image
+         (!$.trim($(this).text()).length))   // and there's no text
+    {
+        $(this).addClass('imgOnly');         // Add a special CSS class
+    }
+});
+
+
+     //append content to "appendhere"
+     var append_div_here = document.getElementById("myappendcontent");
+     append_div_here.appendChild(newdiv);
+
+}
+
 //CREATE VIDEO WITH TEXT=======================================================
 /*CreateVideoHeader
 * Create and allocate a header video section
 * collects image link, sub header, header, and description, if existing
 *
 */
-function Video_CreateHeaderVideo(mydivsi){
+function CreateHeaderVideo(mydivsi){
      //collect the template for header img
      var sampledatasection  = document.getElementsByClassName('sampledatasectionVO')[0];
 
@@ -101,9 +141,6 @@ function Video_CreateHeaderVideo(mydivsi){
      newsrcdoc_img.src = myfullimglink.innerHTML;
      newsrcdoc_img.alt = my_youtube_description;
 
-
-
-
      newsrcdoc.setAttribute("srcdoc", "demoValue");
      mynewiframe.srcdoc = newsrcdoc.innerHTML;
 
@@ -118,7 +155,7 @@ function Video_CreateHeaderVideo(mydivsi){
 }
 
 //CREATE PDF=======================================================
-function CreateHeaderPI(mydivsi){
+function CreatePDFs(mydivsi){
                //initialize values from markdown to ter to header
                var sectionheaderPI = CollectmyHeader(mydivsi);
 
@@ -154,6 +191,7 @@ function CreateHeaderPI(mydivsi){
                //largernewdivPI.getElementsByClassName("sampleappendherePI")[0].innerHTML = reassignme.innerHTML;
                largerelementPI.append(finalpdfdiv);
 }
+
 function CreatePdfGrid(pdfcontain, mydivsi, mylinkarrayPI){
      console.log("mylinkarrayPI");
      var i;
@@ -238,46 +276,7 @@ function AddHreftoNewDiv_Prepend(get_class, at_place, copy_this_data, search_her
      return copyhere;
 }
 
-//CREATE VIDEO WITH TEXT=======================================================
-/*CreateVideoHeader
-* Create and allocate a header video section
-* collects image link, sub header, header, and description, if existing
-*
-*/
-function CreateHeaderVideo(mydivsi){
-     //collect the template for header img
-     var sampledatasection  = document.getElementsByClassName('sampledatasectionVO')[0];
 
-
-     //collect tag elements from div
-     var myh1 = CheckifVoidandAssign_Gen("h1", 0, mydivsi);
-     var myh2 = CheckifVoidandAssign_Gen("h2", 0, mydivsi);
-     var myp = CheckifVoidandAssign_P_Gen(mydivsi);
-     var myiframe = CheckifVoidandAssign_Vid_Gen(0, mydivsi);
-
-     //create new div and copy sample data
-     var newdiv = document.createElement("div");
-     newdiv.innerHTML = sampledatasection.innerHTML;
-
-     //get sections of old div
-     var mainheader = newdiv.getElementsByClassName('mainheaderVO')[0];
-     var subheader = newdiv.getElementsByClassName('subheaderVO')[0];
-     var myparagraph = newdiv.getElementsByClassName('myparagraphVO')[0];
-     var mynewiframe = newdiv.getElementsByClassName('myiframehere')[0];
-
-     //reassign with markdown values
-     mainheader.innerHTML = myh2.innerHTML;
-     subheader.innerHTML = myh1.innerHTML;
-     myparagraph.innerHTML = myp.innerHTML;
-     mynewiframe.src = myiframe.src;
-
-
-     //append copy to append image_text_overlay
-     var append_div_here = document.getElementById("myappendcontent");
-     append_div_here.appendChild(newdiv);
-
-
-}
 
 //CREATE HEADER IMAGE=======================================================
 /*CreateHeaderImg
@@ -294,7 +293,7 @@ function CreateHeaderImg(mydivsi){
      var myh1 = CheckifVoidandAssign_Gen("h1", 0, mydivsi);
      var myh2 = CheckifVoidandAssign_Gen("h2", 0, mydivsi);
      var myp = CheckifVoidandAssign_P_Gen(mydivsi);
-     console.log("Where");
+
      var myimg = CheckifVoidandAssign_Img_Gen(0, mydivsi);
      $(myimg).attr('src' , "../web/img/" + $(myimg).attr('src'));
 

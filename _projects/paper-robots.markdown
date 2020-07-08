@@ -5,8 +5,6 @@ displayimg: horizontal_paperbots_car.jpeg
 
 <div class="site_title" markdown="1">
 # PaperBots
-# made of paper
-#tons of paper
 </div>
 
 <div class="image_text_overlay" markdown="1">
@@ -17,6 +15,25 @@ PaperBots provide a low cost method of
 creating educational robots for any age.
 </div>
 
+<div class="free_write" markdown="1">
+![Link to my pic](cutie-pie.jpg)
+# Another Image
+## This is a second image section
+All we had to do here was copy and paste the fist
+section and change the content.
+
+> Aghkjkjl
+> kdfghjk
+> dfghjk
+
+1. markdown
+2. is
+3. fun
+
+
+### my sub sub head
+
+</div>
 
 <div class="image_text_overlay" markdown="1">
 ![Link to my pic](cutie-pie.jpg)
