@@ -150,7 +150,7 @@ function AddHreftoNewDiv(get_class, at_place, copy_this_data, search_here){
 
 function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
-    $(copy_this_data).attr('href' , "../web/pdf/" + $(copy_this_data).attr('href'));
+    $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
 
      copyhere.src = copy_this_data.href;
      return copyhere;
@@ -181,7 +181,7 @@ function CreateFreeWrite(mydivsi){
 
      var myimages = newdiv.getElementsByTagName("img");
      for (var i = 0; i < myimages.length; i++){
-          $(myimages[i]).attr('src' , "../web/img/" + $(myimages[i]).attr('src'));
+          $(myimages[i]).attr('src' , "../project_assets/" + $(myimages[i]).attr('src'));
           $(myimages[i]).attr('style' , "justify-content:center;text-align:center;float:center;");
           $(myimages[i]).attr('class' , "imgOnly");
 
@@ -382,7 +382,7 @@ function AddHreftoNewDiv(get_class, at_place, copy_this_data, search_here){
 
 function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
-    $(copy_this_data).attr('href' , "../web/pdf/" + $(copy_this_data).attr('href'));
+    $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
 
      copyhere.src = copy_this_data.href;
      return copyhere;
@@ -414,7 +414,7 @@ function CreateHeaderImg(mydivsi){
      var myp = CheckifVoidandAssign_P_Gen(mydivsi);
 
      var myimg = CheckifVoidandAssign_Img_Gen(0, mydivsi);
-     $(myimg).attr('src' , "../web/img/" + $(myimg).attr('src'));
+     $(myimg).attr('src' , "../project_assets/" + $(myimg).attr('src'));
 
 
      //create new div and copy sample data

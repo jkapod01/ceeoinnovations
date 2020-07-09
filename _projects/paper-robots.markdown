@@ -8,7 +8,7 @@ displayimg: horizontal_paperbots_car.jpeg
 </div>
 
 <div class="image_text_overlay" markdown="1">
-![Link to my pic](headimagerobot.jpg)
+![Link to my pic](paper-bots/headimagerobot.jpg)
 ## An Inexpensive Option for Engineering Education
 # Accessible Robotics
 PaperBots provide a low cost method of
@@ -22,7 +22,7 @@ creating educational robots for any age.
 
 Pull-up Man is a demonstration of rotational motion converted into linear motion.  It is a simple 2D cam action toy made from cardstock and brass fasteners.  A cam linkage on the back side converts the rotary motion of the crank to the linear motion of the man.  Here are the pieces that make up this kit:
 
-![Pull Up Man Pieces](pull-up-pieces.jpeg)
+![Pull Up Man Pieces](paper-bots/pull-up-pieces.jpeg)
 
 ### Required Pieces
 
@@ -34,7 +34,8 @@ Pull-up Man is a demonstration of rotational motion converted into linear motion
  Students can customize/decorate the final product to personalize to their liking.
 
 > The pull up man is my favorite "PaperBots" project
->  -a Student
+>
+> -a Student
 
 
 ### Attach motors to Pull-Up man using this simple code:
@@ -47,7 +48,7 @@ Pull-up Man is a demonstration of rotational motion converted into linear motion
 
 ```
 
-![Final pull up man](pullup-man-assembled.jpeg)
+![Final pull up man](paper-bots/pullup-man-assembled.jpeg)
 
 ### Here is a photo of
 ### the final product:
@@ -56,8 +57,8 @@ Pull-up Man is a demonstration of rotational motion converted into linear motion
 
 <div class="pdf" markdown="1">
 # PaperBots Cutouts
-[Pull Up Man Lesson Plan](Pull-Up-Man-Lesson-Plan.pdf)
-[HexaBot Lesson Plan](HexaBot-Lesson-Plan.pdf)
+[Pull Up Man Lesson Plan](paper-bots/Pull-Up-Man-Lesson-Plan.pdf)
+[HexaBot Lesson Plan](paper-bots/HexaBot-Lesson-Plan.pdf)
 </div>
 
 <div class="video_text_overlay" markdown="1">
