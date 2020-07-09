@@ -167,7 +167,6 @@ function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_
 
 function CreateFreeWrite(mydivsi){
 
-     var alldatasection= document.getElementsByClassName('free_write_content_container');
 
      var sampledatasection= document.getElementsByClassName('sample_free_write_content_container_container')[0];
 
@@ -184,6 +183,7 @@ function CreateFreeWrite(mydivsi){
      for (var i = 0; i < myimages.length; i++){
           $(myimages[i]).attr('src' , "../web/img/" + $(myimages[i]).attr('src'));
           $(myimages[i]).attr('style' , "justify-content:center;text-align:center;float:center;");
+          $(myimages[i]).attr('class' , "imgOnly");
 
      }
 
@@ -191,10 +191,11 @@ function CreateFreeWrite(mydivsi){
     if ( ($(this).find('img').length) &&     // If there's an image
          (!$.trim($(this).text()).length))   // and there's no text
     {
+         console.log("add class.........");
+
         $(this).addClass('imgOnly');         // Add a special CSS class
     }
 });
-
 
      //append content to "appendhere"
      var append_div_here = document.getElementById("myappendcontent");
