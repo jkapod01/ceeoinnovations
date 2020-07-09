@@ -12,7 +12,19 @@
      font-size:200%;
      text-transform: none;
      line-height: 140%;
+}
 
+@media(max-width:952px) {
+     #headerMPT{
+          font-size:140%;
+           display: inline;
+          text-transform: none;
+          line-height: 100%;
+     }
+     .site-heading-upper, #titleheader, .site-heading-upper{
+           display: inline;
+
+     }
 }
 </style>
 
@@ -23,12 +35,13 @@
 
 
 <div class="sampledatasectionMPT">
-     <h1 class="site-heading text-center text-black d-none d-lg-block">
+     <h1 class="site-heading text-center text-black d-lg-block">
 
-       <span class="site-heading-upper mb-3" style="color:#00FF85">Project</span>
+
        <div id="titleheader">
-           <span id="headerMPT" class="site-heading-upper headerMPT"></span>
-           <span class="site-heading-upper subheaderMPT" style="text-transform: none; font-size:200%"></span>
+            <div class="site-heading-upper mb-3" style="color:#00FF85">Project</div>
+           <div id="headerMPT" class="site-heading-upper headerMPT"></div>
+           <div class="site-heading-upper subheaderMPT" style="text-transform: none; font-size:200%"></div>
       </div>
      </h1>
 

@@ -123,12 +123,11 @@ ul li:nth-child(even)::before {
   border-radius: 50%;
 }
 /*free_write css --------------------------------------------------*/
-
-.free_write_content_container {
+.sample_free_write_content_container_container {
+          display: none;
+}
+.sample_free_write_content_container, .free_write_content_container {
      align: center;
-
-     margin-left:15%;
-     margin-right:15%;
 }
 .free_write_row {
      text-align:center;
@@ -140,10 +139,6 @@ ul li:nth-child(even)::before {
      width:65%;
 }
 @media(max-width:992px) {
-
-     .free_write_content_container {
-          box-shadow: 4px 4px 60px rgb(0,0,0, 0.1) ;
-     }
      .free_write_content{
           width:85%;
      }
@@ -154,14 +149,14 @@ ul li:nth-child(even)::before {
           margin-right: 15px;
      }
 
-     .free_write_content_container {
+     .sample_free_write_content_container, .free_write_content_container {
           align: center;
           margin-left: 3%;
           margin-right: 3%;
      }
 }
 .imgOnly{
-     text-align:center;
+     text-align:right;
 }
 
 .free_write_content h2{
@@ -178,12 +173,12 @@ ul li:nth-child(even)::before {
      font-weight: 300;
 }
 .free_write_content h1 {
-     text-align:center;
+     text-align:left;
      font-weight: 500;
 }
 .imgOnly img{
       box-shadow: 2px 2px 5px grey;
-      width: 95%;
+      width: 50%;
 }
 
 /*style ref: http://adis.ca/entry/2011/pretty-code-block-in-css/*/

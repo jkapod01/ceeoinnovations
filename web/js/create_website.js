@@ -14,7 +14,6 @@ function CreateWebMain(){
 */
 function CollectAllDivs(){
      var mycontent = document.getElementById("mycontent");
-     console.log(mycontent);
      var mydivs =  mycontent.getElementsByTagName("div");
      return mydivs;
 }
@@ -30,19 +29,135 @@ function CollectAllDivs(){
            } else if ( mydivs[i].classList.contains("image_text_overlay")){
                 CreateHeaderImg(mydivs[i]);
            }else if ( mydivs[i].classList.contains("pdf")){
-                 console.log(i);
                CreatePDFs(mydivs[i]);
 
-          }  else if ( mydivs[i].classList.contains("video_text_overlay")){
+          } else if ( mydivs[i].classList.contains("video_text_overlay")){
                  CreateHeaderVideo(mydivs[i]);
           }    else if ( mydivs[i].classList.contains("free_write")){
                  CreateFreeWrite(mydivs[i]);
-          }  else {
+          } else if (mydivs[i].classList.contains("link_grid")){
+                 //CreateLinks(mydivs[i]);
+          }
+          else {
                 console.log("Div does not have a valid value");
            }
 
       }
 }
+//CREATELINKS==================================================================
+
+//CREATE PDF=======================================================
+function CreateLinks(mydivsi){
+               //initialize values from markdown to ter to header
+               var sectionheader = CollectmyLinkHeader(mydivsi);
+
+               var mylinkimgarray = mydivsi.getElementsByTagName('img');
+               var mylinkarray = mydivsi.getElementsByTagName('a');
+               var mylinkparray = mydivsi.getElementsByTagName('p');
+
+               console.log("mylinkparray");
+               console.log(mylinkparray);
+
+
+               var largernewdivPI = CreatenewDiv("largerdatasection", "largerpdfsampledatasection");
+
+               var largerelementPI = document.getElementById("myappendcontent");
+
+               var sectionpdfheader = largernewdivPI.getElementsByClassName('pdfsectiontitle')[0];
+
+               sectionpdfheader.innerHTML = sectionheaderPI.innerHTML;
+
+               //Create new div that copies append here to append pdfs to
+               //var pdfcontain = CreatenewDiv("sampleappendherePI row mb-5 no-gutters","sampleappendherePI");
+               console.log("PDF CONTAIN")
+               var pdfcontain = document.createElement("div");
+               pdfcontain.className = "sampleappendherePI row mb-5 no-gutters";
+               pdfcontain = CreatePdfGrid(pdfcontain, mydivsi, mylinkarrayPI);
+
+               //create new div that copies all
+               largernewdivPI.getElementsByClassName("sampleappendherePI")[0].innerHTML = pdfcontain.innerHTML;
+
+               //Create a third div that copies rows into full section
+               var myoverall = document.getElementsByClassName("collectthispdfsection")[0];
+
+               var finalpdfdiv = CreatenewDiv("pdfdatasection page-section clearfix","collectthispdfsection");
+
+               var myfinalappend = finalpdfdiv.getElementsByClassName("largerappendherePI")[0];
+               myfinalappend.innerHTML = largernewdivPI.innerHTML;
+
+               //reassignme = pdfcontain;
+               //largernewdivPI.getElementsByClassName("sampleappendherePI")[0].innerHTML = reassignme.innerHTML;
+               largerelementPI.append(finalpdfdiv);
+}
+
+function CreatePdfGrid(pdfcontain, mydivsi, mylinkarrayPI){
+     var i;
+     for(i=0;i < (mylinkarrayPI.length); i++){
+          //creating a new div with a class name that copies the innerhtml of another div
+          if (mylinkarrayPI.length%4==0){
+               var newdivPI = CreatenewDiv("col-sm-3 col-md-3 col-lg-3 pdfdatasection", "pdfsampledatasection");
+          } else if(mylinkarrayPI.length%3==0){
+               var newdivPI = CreatenewDiv("col-sm-4 col-md-4 col-lg-4 pdfdatasection", "pdfsampledatasection");
+          } else if(mylinkarrayPI.length%2==0){
+               var newdivPI = CreatenewDiv("col-sm-6 col-md-6 col-lg-6 pdfdatasection", "pdfsampledatasection");
+          }else if(mylinkarrayPI.length==1){
+               var newdivPI = CreatenewDiv("col-sm col-md col-lg pdfdatasection", "pdfsampledatasection");
+          } else{
+               var newdivPI = CreatenewDiv("col-sm-4 col-md-4 col-lg-4 pdfdatasection", "pdfsampledatasection");
+          }
+
+          //copy elements from markdown to new div
+          var copythis = document.getElementsByClassName("pdfsampledatasection")[0];
+          newdivPI.innerHTML = copythis.innerHTML;
+
+          //copy title to pdfheader
+          var mypdftitle = mylinkarrayPI[i].innerHTML;
+          newdivPI.getElementsByClassName("pdfheader")[0].innerHTML =mypdftitle;
+          //copy link to button and iframe
+          AddHrefSRCtoNewDiv_Prepend("mypdf", 0, mylinkarrayPI[i], newdivPI);
+          AddHreftoNewDiv_Prepend("click-to-download", 0, mylinkarrayPI[i], newdivPI);
+
+          //Create new div that copies append here to append content to
+          pdfcontain.append(newdivPI);
+
+     }
+     return pdfcontain;
+}
+
+function CollectmyLinkHeader(section_to_check){
+     var sectionheaderPI = section_to_check.getElementsByTagName('h1')[0];
+     var sectionheaderPI = LinkEmptyHeaderCheck(sectionheaderPI,section_to_check);
+
+     return sectionheaderPI;
+}
+
+function LinkEmptyHeaderCheck(sectionheaderPI, section_to_check){
+     if(typeof(sectionheaderPI) == 'undefined' || sectionheaderPI == 'null'){
+          var sectionheaderPI = document.getElementsByClassName("voidvalue")[0];;
+     }
+     return sectionheaderPI;
+}
+function AddHrefSRCtoNewDiv(get_class, at_place, copy_this_data, search_here){
+     var copyhere = search_here.getElementsByClassName(get_class)[at_place];
+     copyhere.src = copy_this_data.href;
+     return copyhere;
+}
+function AddHreftoNewDiv(get_class, at_place, copy_this_data, search_here){
+     var copyhere = search_here.getElementsByClassName(get_class)[at_place];
+     copyhere.href = copy_this_data.href;
+     return copyhere;
+}
+
+function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
+     var copyhere = search_here.getElementsByClassName(get_class)[at_place];
+    $(copy_this_data).attr('href' , "../web/pdf/" + $(copy_this_data).attr('href'));
+
+     copyhere.src = copy_this_data.href;
+     return copyhere;
+}
+
+
+
 //CREATEFREEWRITE==============================================================
 /*CreateFreeWrite
 * Create and allocate a free_write section
@@ -52,13 +167,19 @@ function CollectAllDivs(){
 
 function CreateFreeWrite(mydivsi){
 
-     var sampledatasection= document.getElementsByClassName('free_write_content_container')[0];
+     var alldatasection= document.getElementsByClassName('free_write_content_container');
+
+     var sampledatasection= document.getElementsByClassName('sample_free_write_content_container_container')[0];
 
      //make and append a copy of sample data section
      var newdiv = document.createElement("div");
-     newdiv = sampledatasection;
+     newdiv.className = "page-section";
+
+     newdiv.innerHTML = sampledatasection.innerHTML;
+
+
      newdiv.getElementsByClassName('free_write_content')[0].innerHTML = mydivsi.innerHTML;
-     console.log(mydivsi);
+
      var myimages = newdiv.getElementsByTagName("img");
      for (var i = 0; i < myimages.length; i++){
           $(myimages[i]).attr('src' , "../web/img/" + $(myimages[i]).attr('src'));
@@ -77,6 +198,9 @@ function CreateFreeWrite(mydivsi){
 
      //append content to "appendhere"
      var append_div_here = document.getElementById("myappendcontent");
+     console.log("appending new free write div.........");
+     console.log(newdiv.innerHTML);
+
      append_div_here.appendChild(newdiv);
 
 }
@@ -102,7 +226,6 @@ function CreateHeaderVideo(mydivsi){
      var my_youtube_code = mypicturelink.href.replace('https://youtu.be/', '');
      var my_youtube_description = mypicturelink.innerHTML;
 
-     console.log(my_youtube_code);
 
      //create new div and copy sample data
      var newdiv = document.createElement("div");
@@ -144,9 +267,6 @@ function CreateHeaderVideo(mydivsi){
      newsrcdoc.setAttribute("srcdoc", "demoValue");
      mynewiframe.srcdoc = newsrcdoc.innerHTML;
 
-
-     console.log(mynewiframe);
-
      //append copy to append image_text_overlay
      var append_div_here = document.getElementById("myappendcontent");
      append_div_here.appendChild(newdiv);
@@ -171,7 +291,6 @@ function CreatePDFs(mydivsi){
 
                //Create new div that copies append here to append pdfs to
                //var pdfcontain = CreatenewDiv("sampleappendherePI row mb-5 no-gutters","sampleappendherePI");
-               console.log("PDF CONTAIN")
                var pdfcontain = document.createElement("div");
                pdfcontain.className = "sampleappendherePI row mb-5 no-gutters";
                pdfcontain = CreatePdfGrid(pdfcontain, mydivsi, mylinkarrayPI);
@@ -193,7 +312,6 @@ function CreatePDFs(mydivsi){
 }
 
 function CreatePdfGrid(pdfcontain, mydivsi, mylinkarrayPI){
-     console.log("mylinkarrayPI");
      var i;
      for(i=0;i < (mylinkarrayPI.length); i++){
           //creating a new div with a class name that copies the innerhtml of another div
@@ -312,7 +430,6 @@ function CreateHeaderImg(mydivsi){
      mainheader.innerHTML = myh2.innerHTML;
      subheader.innerHTML = myh1.innerHTML;
      myparagraph.innerHTML = myp.innerHTML;
-     console.log(myimg.src);
      mynewimg.src = myimg.src;
 
      //append copy to append image_text_overlay
