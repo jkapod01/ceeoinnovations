@@ -1,6 +1,6 @@
 ---
 layout: post
-displayimg: PaperBotsLogo.png
+displayimg: paper-bots/PaperBotsLogo.png
 ---
 
 <div class="sitetitle" markdown="1">

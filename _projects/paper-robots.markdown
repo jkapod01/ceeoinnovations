@@ -1,6 +1,6 @@
 ---
 layout: post
-displayimg: horizontal_paperbots_car.jpeg
+displayimg: paper-bots/horizontal_paperbots_car.jpeg
 ---
 
 <div class="site_title" markdown="1">
