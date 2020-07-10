@@ -8,6 +8,7 @@ displayimg: paper-bots/horizontal_paperbots_car.jpeg
 </div>
 
 <div class="image_text_overlay" markdown="1">
+
 ![Link to my pic](paper-bots/headimagerobot.jpg)
 ## An Inexpensive Option for Engineering Education
 # Accessible Robotics
