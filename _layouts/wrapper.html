@@ -102,41 +102,26 @@ float: left;
 <body style="background-color:rgba(246,245,245,1);padding-top: 0px">
 
 
-<div id="navbar">
+     <div id="navbar">
 
-     <a href="../index.html" id="logo" target="_blank">
-          <img  id="logoimg" class="img-fluid" src="../web/img/Logo_Black.png" alt="">
-     </a>
+          <a href="../index.html" id="logo" target="_blank">
+               <img  id="logoimg" class="img-fluid" src="../web/img/Logo_Black.png" alt="">
+          </a>
 
-  <div id="navbar-right">
-       <a  id="navimglink"  href="https://www.tufts.edu/" >
-            <img  id="navimg" src="../web/img/Tufts_University.png" alt="">
-   </a>
+       <div id="navbar-right">
+            <a  id="navimglink"  href="https://www.tufts.edu/" >
+                 <img  id="navimg" src="../web/img/Tufts_University.png" alt="">
+        </a>
 
-          {% for item in site.data.navigation.docs %}
-            <a class ="nav" href="{{ item.url }}">{{ item.title }}</a>
-          {% endfor %}
+               {% for item in site.data.navigation.docs %}
+                 <a class ="nav" href="{{ item.url }}">{{ item.title }}</a>
+               {% endfor %}
 
-  </div>
+       </div>
+     </div>
+
+<div style="padding-bottom:3rem">
 </div>
-
-
-
-<header1 class="py-5 mb-4" style="background-color:#00FF85;width:100%;margin:0;border:0;padding:0">
-  <div class="container">
-	  <div class="row">
-		  <div class="col-lg-12">
-	  <a href="../index.html" target="_blank">
-		  <img class="img-fluid" style="width: 15%;max-width: 200px; margin-right: 70%" src="../web/img/Logo_Black.png" alt="">
-	  </a>
-	  <a href="https://www.tufts.edu/" target="_blank">
-			<img class="img-fluid" style="width: 13%;max-width: 200px " src="../web/img/Tufts_University.png" alt="">
-	  </a>
-		</div>
-	  </div>
-  </div>
-
-</header1>
 
 
 {{content}}
@@ -173,7 +158,7 @@ function scrollFunction() {
     $("#navbar").css({"padding-left": "1%", "padding-right": "1%", "background-color": "rgba(0, 255, 133, .9)" });
     $("#logo").css({"width": "8%"});
      $("#navimglink").css({"width": "8%"});
-     
+
 
   } else {
     document.getElementById("navbar").style.padding = "30px 10px";
