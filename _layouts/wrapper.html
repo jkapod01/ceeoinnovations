@@ -105,12 +105,12 @@ float: left;
      <div id="navbar">
 
           <a href="../index.html" id="logo" target="_blank">
-               <img  id="logoimg" class="img-fluid" src="../web/img/Logo_Black.png" alt="">
+               <img  id="logoimg" class="img-fluid" src="../web/img/Logo_Black.png" onError="this.onerror=null;this.src='/web/img/Logo_Black.png';" alt="">
           </a>
 
        <div id="navbar-right">
             <a  id="navimglink"  href="https://www.tufts.edu/" >
-                 <img  id="navimg" src="../web/img/Tufts_University.png" alt="">
+                 <img  id="navimg" src="/web/img/Logo_Black.png" alt="">
         </a>
 
                {% for item in site.data.navigation.docs %}
