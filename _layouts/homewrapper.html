@@ -16,18 +16,6 @@
 <!--...........................................................................................................-->
 <style>
 
-
-.site-top {
-  @media (min-width: 768px) {
-  .site-top .border-top {
-    border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
-  .site-top ul li {
-    margin-bottom: 10px; }
-  .site-top .footer-heading {
-    font-size: 16px;
-    color: #dc3545;
-    text-transform: uppercase; }
-
 * {box-sizing: border-box;}
 
 body {
@@ -39,10 +27,9 @@ body {
 #navbar {
   overflow: hidden;
   margin: auto;
-
   background-color: rgba(0, 255, 133, 1);
   width: 100%;
-  z-index: 999;
+  z-index: 9999;
   padding: 30px 10px;
 
 }
@@ -54,7 +41,6 @@ body {
   padding-left: 12px;
    padding-right: 12px;
   text-decoration: none;
-  font-size: 1.5vw;
 }
 
 #navbar .nav{
@@ -109,13 +95,66 @@ body {
 .sticky {
   position: fixed;
   top: 0;
+  z-index: 9999;
   width: 100%;
 }
 
 .sticky + .content {
   padding-top: 102px;
 }
+#masthead #site-top{
+     background-image: url(web/img/background-gif2.gif);
+     background-size: cover;
+}
+#mastheadparagraph p{
+     line-height: 130%;
+     color:#000000;
+     font-size:340%;
+     padding: none;
+}
+#Ceeo_Inno_Brand{
+     width:55%;
+}
+@media(max-width:992px) {
+     #mastheadparagraph p{
+          font-size:240%
+     }
+}
+@media(max-width:850px) {
+     #mastheadparagraph p{
+          font-size:200%
+     }
+     #masthead #site-top{
+          background-image: url(web/img/small-background-gif.gif);
+          background-size: cover;
+     }
+}
 
+@media(max-width:650px){
+     #mastheadparagraph p{
+          font-size:170%
+     }
+     #Ceeo_Inno_Brand{
+          width:90%; 
+     }
+}
+@media(max-width:500px){
+     #mastheadparagraph p{
+          font-size:130%
+     }
+     #Ceeo_Inno_Brand{
+          width:100%;
+     }
+
+
+}
+@media(max-width:400px) {
+
+     #masthead #site-top{
+          background-image: url(web/img/Background.png);
+          background-size: cover;
+     }
+}
 
 
 </style>
@@ -125,16 +164,16 @@ body {
 <body style="background-color:rgba(246,245,245,1);padding-top: 0px">
 
      <div id="masthead" class="masthead">
-          <section class="page-section site-top clearfix" style = "margin-top:0rem;background-image: url(web/img/background-gif2.gif); background-size: cover;)">
+          <section id="site-top" class="page-section site-top clearfix" style = "margin-top:0rem;">
                <div class="container" >
 		                  <div class="row">
 			                       <div class="col-md-12" style="margin-left: 0%">
-		                                      <img class="img-fluid" style="width:55%; margin-top: 7rem;margin-bottom: 3rem; margin-right:10%" src="web/img/Logo_Black.png" alt="">
-		                                                     <div class="col-md-11 d-none d-lg-block" style="max-height: 70%; overflow:hidden">
-		                                                                  <p style="line-height: 140%;color:#000000;font-family:-apple-system, BlinkMacSystemFont, “Segoe UI”, Helvetica, “Apple Color Emoji”, Arial, sans-serif, “Segoe UI Emoji”, “Segoe UI Symbol”;font-size:340% "><strong>An online portal for sharing various research and development projects, tools, and technologies being created at the Tufts CEEO</strong></p>
+		                                      <img id="Ceeo_Inno_Brand" class="img-fluid" style="margin-top: 5rem;margin-bottom: 3rem; margin-right:10%" src="web/img/Logo_Black.png" alt="">
+		                                                     <div id="mastheadparagraph"  style="max-height: 70%; overflow:hidden">
+		                                                                  <p>An online portal for sharing research and development projects, tools, and technologies being created at the Tufts CEEO</p>
 			<!-- ..........................................................................................................................-->
 		                                                     </div>
-			                                                          <img class="img-fluid" style=" width:40%; margin-top: 4rem;margin-bottom: 6rem" src="web/img/CEEO_Logo_Black Background.png" alt="">
+			                                                          <img class="img-fluid" style=" width:40%; margin-top: 4rem;margin-bottom: 3rem" src="web/img/CEEO_Logo_Black Background.png" alt="">
 	                               </div>
 	                       </div>
                </div>
@@ -207,10 +246,8 @@ function scrollFunction() {
 
 
       if (window.pageYOffset >= sticky) {
-           console.log("bro bro");
         header.classList.add("sticky");
       } else {
-           console.log("no homo");
         header.classList.remove("sticky");
       }
 
@@ -218,11 +255,12 @@ function scrollFunction() {
 
     document.getElementById("navbar").style.padding = "0px 0px";
      $("#navbar-right").css({"float": "right", "padding-top":"0%"});
-    $("#navbar").css({"padding-left": "1%", "padding-right": "1%", "background-color": "rgba(0, 255, 133, .3)" });
+    $("#navbar").css({"padding-left": "1%", "padding-right": "1%"});
     $("#logo").css({"width": "10%"});
     $("#navtuftsimglink img").css({"padding-bottom": "0%"});
      $("#navtuftsimglink").css({"width": "10%", "padding-top": ".5%"});
       $("#navbar-right a").css({"font-size": "1vw"});
+      $("#navbar").css({"background-image": "url(web/img/Background.png)"});
 
 
 } else  {
@@ -231,9 +269,9 @@ function scrollFunction() {
     $("#navtuftsimglink").css({"width": "10%"});
      $("#navtuftsimglink img").css({"width": "100%", "padding-bottom": "0%"});
     $("#navbar-right").css({"float": "right", "padding-top":"1%"});
-    $("#navbar").css({"background-color": "rgba(0, 255, 133, .9)"});
     $(" #navbar .nav").css({"padding-top": "1%"});
      $("#navbar-right a").css({"font-size": "1.5vw"});
+      $("#navbar").css({"background-image": "none"});
   }
 }
 </script>
