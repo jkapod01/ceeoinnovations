@@ -17,17 +17,6 @@
 <style>
 
 
-.site-top {
-  @media (min-width: 768px) {
-  .site-top .border-top {
-    border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
-  .site-top ul li {
-    margin-bottom: 10px; }
-  .site-top .footer-heading {
-    font-size: 16px;
-    color: #dc3545;
-    text-transform: uppercase; }
-
 * {box-sizing: border-box;}
 
 body {
@@ -39,7 +28,7 @@ body {
 #navbar {
   overflow: hidden;
   margin: auto;
-
+  position: fixed;
   background-color: rgba(0, 255, 133, 1);
   width: 100%;
   z-index: 999;
@@ -90,32 +79,6 @@ body {
       width: 100%;
 }
 
-.top-container {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
-
-.header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
-}
-
 
 
 </style>
@@ -123,23 +86,6 @@ body {
 </head>
 
 <body style="background-color:rgba(246,245,245,1);padding-top: 0px">
-
-     <div id="masthead" class="masthead">
-          <section class="page-section site-top clearfix" style = "margin-top:0rem;background-image: url(web/img/background-gif2.gif); background-size: cover;)">
-               <div class="container" >
-		                  <div class="row">
-			                       <div class="col-md-12" style="margin-left: 0%">
-		                                      <img class="img-fluid" style="width:55%; margin-top: 7rem;margin-bottom: 3rem; margin-right:10%" src="web/img/Logo_Black.png" alt="">
-		                                                     <div class="col-md-11 d-none d-lg-block" style="max-height: 70%; overflow:hidden">
-		                                                                  <p style="line-height: 140%;color:#000000;font-family:-apple-system, BlinkMacSystemFont, “Segoe UI”, Helvetica, “Apple Color Emoji”, Arial, sans-serif, “Segoe UI Emoji”, “Segoe UI Symbol”;font-size:340% "><strong>An online portal for sharing various research and development projects, tools, and technologies being created at the Tufts CEEO</strong></p>
-			<!-- ..........................................................................................................................-->
-		                                                     </div>
-			                                                          <img class="img-fluid" style=" width:40%; margin-top: 4rem;margin-bottom: 6rem" src="web/img/CEEO_Logo_Black Background.png" alt="">
-	                               </div>
-	                       </div>
-               </div>
-          </section>
-     </div>
 
 
 
@@ -195,30 +141,13 @@ body {
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
-var header = document.getElementById("nav-wrap");
-
-console.log("YOYOOYYOYO");
-var sticky = header.offsetTop;
-console.log(sticky);
-console.log(window.pageYOffset);
-
 function scrollFunction() {
 
-
-
-      if (window.pageYOffset >= sticky) {
-           console.log("bro bro");
-        header.classList.add("sticky");
-      } else {
-           console.log("no homo");
-        header.classList.remove("sticky");
-      }
-
-  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop >80) {
 
     document.getElementById("navbar").style.padding = "0px 0px";
      $("#navbar-right").css({"float": "right", "padding-top":"0%"});
-    $("#navbar").css({"padding-left": "1%", "padding-right": "1%", "background-color": "rgba(0, 255, 133, .3)" });
+    $("#navbar").css({"padding-left": "1%", "padding-right": "1%", "background-color": "rgba(0, 255, 133, .9)" });
     $("#logo").css({"width": "10%"});
     $("#navtuftsimglink img").css({"padding-bottom": "0%"});
      $("#navtuftsimglink").css({"width": "10%", "padding-top": ".5%"});
