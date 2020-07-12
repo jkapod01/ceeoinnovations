@@ -16,7 +16,6 @@
 <!--...........................................................................................................-->
 <style>
 
-
 * {box-sizing: border-box;}
 
 body {
@@ -28,10 +27,9 @@ body {
 #navbar {
   overflow: hidden;
   margin: auto;
-  position: fixed;
-  background-color: rgba(0, 255, 133, 1);
+  background-color: rgba(0, 255, 133, .9);
   width: 100%;
-  z-index: 999;
+  z-index: 9999;
   padding: 30px 10px;
 
 }
@@ -43,7 +41,6 @@ body {
   padding-left: 12px;
    padding-right: 12px;
   text-decoration: none;
-  font-size: 1.5vw;
 }
 
 #navbar .nav{
@@ -63,14 +60,15 @@ body {
 #navbar-right{
      padding-top: 1%;
      float:right;
+
 }
 
 #navbar a.active {
      background-color: #fff;
      color: white;
 }
-#navtuftsimglink{
-     width: 10%;
+#navbar #navtuftsimglink{
+     width:100px;
 }
 #navtuftsimglink img{
      width: 100%;
@@ -79,7 +77,178 @@ body {
       width: 100%;
 }
 
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
 
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+#masthead #site-top{
+     background-image: url(web/img/background-gif2.gif);
+     background-size: cover;
+}
+#mastheadparagraph p{
+     line-height: 130%;
+     color:#000000;
+     font-size:340%;
+     padding: none;
+}
+#Ceeo_Inno_Brand{
+     width:55%;
+     margin-top: 5rem;
+     margin-bottom: 3rem;
+     margin-right:10%;
+}
+@media(max-width:1200px){
+     #navbar-right{
+          width: 80%;
+
+     }
+}
+@media(max-width:992px) {
+     #mastheadparagraph p{
+          font-size:240%
+     }
+     #site-top{
+          padding:3rem;
+     }
+     #navbar #navtuftsimglink{
+          width: 100px;
+     }
+}
+@media(max-width:850px) {
+     #mastheadparagraph p{
+          font-size:200%
+     }
+     #masthead #site-top{
+          background-image: url(web/img/small-background-gif.gif);
+          background-size: cover;
+     }
+     #Ceeo_Inno_Brand{
+          width:60%;
+     }
+}
+
+@media(max-width:650px){
+     #mastheadparagraph p{
+          font-size:170%
+     }
+     #Ceeo_Inno_Brand{
+          width:90%;
+     }
+}
+
+}
+@media(max-width:500px){
+     #mastheadparagraph p{
+          font-size:100%
+     }
+     #Ceeo_Inno_Brand{
+          width:100%;
+     }
+
+
+}
+@media(max-width:400px) {
+
+     #mastheadparagraph p{
+          font-size:100%
+     }
+     #masthead #site-top{
+          background-image: url(web/img/Background.png);
+          background-size: cover;
+     }
+     #Ceeo_Inno_Brand{
+          padding-top: 0rem;
+          margin-right:8%;
+     }
+}
+
+
+/*Mobile------------------------------------------------------*/
+
+#mobilenav{
+     position: fixed;
+     display: none;
+     background-color: #000;
+}
+@media(max-width:500px) {
+     #navbar{
+          display: none;
+     }
+
+     #mobilenav{
+          display: block;
+     }
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  position: fixed;
+  display: block;
+  right: 0;
+  top: 0;
+}
+
+.topnav a.active{
+     width:25%;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  color: white;
+}
+
+#logoimg{
+
+}
 
 </style>
 
@@ -89,13 +258,33 @@ body {
 
 
 
+<!------Mobile Novbar---------------------------------------------------------------------->
+     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- Top Navigation Menu -->
+     <div id="mobilenav" class=" clearfix sticky topnav">
+       <a href="../index.html" class="active"><img  id="logoimg" class="img-fluid hvr-shrink" src="../web/img/Logo_White.png" onError="this.onerror=null;this.src='web/img/Logo_Black.png';" alt="">
+       </a>
+       <!-- Navigation links (hidden by default) -->
+       <div id="myLinks">
+            {% for item in site.data.navigation.docs %}
+              <a  href="{{ item.url }}" >{{ item.title }}</a>
+            {% endfor %}
+       </div>
+       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+       <a href="javascript:void(0);" class="icon" style="background-color: #fff; color: #000"onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+       </a>
+     </div>
+
 <!-----------NAV BAR-------------------------------------------------------------------->
 
 <div id="nav-wrap">
 
      <div id="navbar" class="clearfix">
 
-          <a class="navlink" href="../index.html" id="logo" target="_blank">
+          <a class="navlink" href="index.html" id="logo" target="_blank">
                <img  id="logoimg" class="img-fluid hvr-shrink" src="../web/img/Logo_Black.png" onError="this.onerror=null;this.src='web/img/Logo_Black.png';" alt="">
           </a>
 
@@ -131,6 +320,18 @@ body {
 <!--This is CEEO INNOVATION default footer -->
 <!--............................................................................................................................................-->
    <div class="footerpage"></div>
+
+   <script>
+   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+   </script>
    <script>
         $(function(){
              $(".footerpage").load("footerpage.html");
@@ -139,31 +340,70 @@ body {
 
    <script>
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction(x)};
 
-function scrollFunction() {
+var header = document.getElementById("nav-wrap");
+var mobileheader = document.getElementById("mobilenav");
+var sticky = header.offsetTop;
 
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop >80) {
+var x = window.matchMedia("(max-width: 900px)")
+scrollFunction(x) // Call listener function at run time
+x.addListener(scrollFunction)
+
+console.log(document.body.scrollTop);
+function scrollFunction(x) {
+
+      if (window.pageYOffset >= sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+
+if(x.matches){
+     if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+
+       document.getElementById("navbar").style.padding = "0px 0px";
+        $("#navbar-right").css({"padding-top":"0%"});
+       $("#navbar").css({"padding-left": "1%", "padding-right": "1%"});
+       $("#logo").css({"width": "10%"});
+       $("#navtuftsimglink img").css({"width": "100%", "padding-bottom": "0%"});
+        $("#navtuftsimglink").css({"padding-top": ".5%"});
+         $("#navbar-right a").css({"font-size": "2vw"});
+         $("#navbar").css({"background-image": "url(web/img/Background.png)"});
+
+   }else  {
+       document.getElementById("navbar").style.padding = "30px 10px";
+       $("#logo").css({"width": "20%"});
+        $("#navtuftsimglink img").css({"width": "100%", "padding-bottom": "0%"});
+       $("#navbar-right").css({ "padding-top":"1%"});
+       $(" #navbar .nav").css({"padding-top": "1%"});
+        $("#navbar-right a").css({"font-size": "2.5vw"});
+         $("#navbar").css({"background-image": "none"});
+     }
+
+} else {
+  if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
 
     document.getElementById("navbar").style.padding = "0px 0px";
-     $("#navbar-right").css({"float": "right", "padding-top":"0%"});
-    $("#navbar").css({"padding-left": "1%", "padding-right": "1%", "background-color": "rgba(0, 255, 133, .9)" });
+     $("#navbar-right").css({"padding-top":"0%"});
+    $("#navbar").css({"padding-left": "1%", "padding-right": "1%"});
     $("#logo").css({"width": "10%"});
-    $("#navtuftsimglink img").css({"padding-bottom": "0%"});
-     $("#navtuftsimglink").css({"width": "10%", "padding-top": ".5%"});
+    $("#navtuftsimglink img").css({"width": "100%", "padding-bottom": "0%"});
+     $("#navtuftsimglink").css({"padding-top": ".5%"});
       $("#navbar-right a").css({"font-size": "1vw"});
+      $("#navbar").css({"background-image": "url(web/img/Background.png)"});
 
 
 } else  {
     document.getElementById("navbar").style.padding = "30px 10px";
     $("#logo").css({"width": "20%"});
-    $("#navtuftsimglink").css({"width": "10%"});
      $("#navtuftsimglink img").css({"width": "100%", "padding-bottom": "0%"});
-    $("#navbar-right").css({"float": "right", "padding-top":"1%"});
-    $("#navbar").css({"background-color": "rgba(0, 255, 133, .9)"});
+    $("#navbar-right").css({ "padding-top":"1%"});
     $(" #navbar .nav").css({"padding-top": "1%"});
      $("#navbar-right a").css({"font-size": "1.5vw"});
+      $("#navbar").css({"background-image": "none"});
   }
+}
 }
 </script>
 

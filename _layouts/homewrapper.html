@@ -27,7 +27,7 @@ body {
 #navbar {
   overflow: hidden;
   margin: auto;
-  background-color: rgba(0, 255, 133, 1);
+  background-color: rgba(0, 255, 133, .9);
   width: 100%;
   z-index: 9999;
   padding: 30px 10px;
@@ -60,14 +60,15 @@ body {
 #navbar-right{
      padding-top: 1%;
      float:right;
+
 }
 
 #navbar a.active {
      background-color: #fff;
      color: white;
 }
-#navtuftsimglink{
-     width: 10%;
+#navbar #navtuftsimglink{
+     width:100px;
 }
 #navtuftsimglink img{
      width: 100%;
@@ -114,6 +115,15 @@ body {
 }
 #Ceeo_Inno_Brand{
      width:55%;
+     margin-top: 5rem;
+     margin-bottom: 3rem;
+     margin-right:10%;
+}
+@media(max-width:1200px){
+     #navbar-right{
+          width: 80%;
+
+     }
 }
 @media(max-width:992px) {
      #mastheadparagraph p{
@@ -121,6 +131,9 @@ body {
      }
      #site-top{
           padding:3rem;
+     }
+     #navbar #navtuftsimglink{
+          width: 100px;
      }
 }
 @media(max-width:850px) {
@@ -144,9 +157,11 @@ body {
           width:90%;
      }
 }
+
+}
 @media(max-width:500px){
      #mastheadparagraph p{
-          font-size:130%
+          font-size:100%
      }
      #Ceeo_Inno_Brand{
           width:100%;
@@ -156,9 +171,16 @@ body {
 }
 @media(max-width:400px) {
 
+     #mastheadparagraph p{
+          font-size:100%
+     }
      #masthead #site-top{
           background-image: url(web/img/Background.png);
           background-size: cover;
+     }
+     #Ceeo_Inno_Brand{
+          padding-top: 0rem;
+          margin-right:8%;
      }
 }
 
@@ -166,9 +188,11 @@ body {
 /*Mobile------------------------------------------------------*/
 
 #mobilenav{
+     position: fixed;
      display: none;
+     background-color: #000;
 }
-@media(max-width:400px) {
+@media(max-width:500px) {
      #navbar{
           display: none;
      }
@@ -181,8 +205,7 @@ body {
 /* Style the navigation menu */
 .topnav {
   overflow: hidden;
-  background-color: #333;
-  position: relative;
+  background-color: #000;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -202,10 +225,14 @@ body {
 /* Style the hamburger menu */
 .topnav a.icon {
   background: black;
+  position: fixed;
   display: block;
-  position: absolute;
   right: 0;
   top: 0;
+}
+
+.topnav a.active{
+     width:25%;
 }
 
 /* Add a grey background color on mouse-over */
@@ -216,8 +243,11 @@ body {
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #4CAF50;
   color: white;
+}
+
+#logoimg{
+
 }
 
 </style>
@@ -231,7 +261,7 @@ body {
                <div class="container" >
 		                  <div class="row">
 			                       <div class="col-md-12" style="margin-left: 0%">
-		                                      <img id="Ceeo_Inno_Brand" class="img-fluid" style="margin-top: 5rem;margin-bottom: 3rem; margin-right:10%" src="web/img/Logo_Black.png" alt="">
+		                                      <img id="Ceeo_Inno_Brand" class="img-fluid" src="web/img/Logo_Black.png" alt="">
 		                                                     <div id="mastheadparagraph"  style="max-height: 70%; overflow:hidden">
 		                                                                  <p>An online portal for sharing research and development projects, tools, and technologies being created at the Tufts CEEO</p>
 			<!-- ..........................................................................................................................-->
@@ -249,8 +279,8 @@ body {
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
      <!-- Top Navigation Menu -->
-     <div id="mobilenav" class="topnav">
-       <a href="index.html" class="active"><img  id="logoimg" class="img-fluid hvr-shrink" src="../web/img/Logo_Black.png" onError="this.onerror=null;this.src='web/img/Logo_Black.png';" alt="">
+     <div id="mobilenav" class=" clearfix sticky topnav">
+       <a href="index.html" class="active"><img  id="logoimg" class="img-fluid hvr-shrink" src="../web/img/Logo_White.png" onError="this.onerror=null;this.src='web/img/Logo_Black.png';" alt="">
        </a>
        <!-- Navigation links (hidden by default) -->
        <div id="myLinks">
@@ -259,7 +289,7 @@ body {
             {% endfor %}
        </div>
        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+       <a href="javascript:void(0);" class="icon" style="background-color: #fff; color: #000"onclick="myFunction()">
          <i class="fa fa-bars"></i>
        </a>
      </div>
@@ -326,18 +356,18 @@ function myFunction() {
 
    <script>
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction(x)};
 
 var header = document.getElementById("nav-wrap");
-
-console.log("YOYOOYYOYO");
+var mobileheader = document.getElementById("mobilenav");
 var sticky = header.offsetTop;
-console.log(sticky);
-console.log(window.pageYOffset);
 
-function scrollFunction() {
+var x = window.matchMedia("(max-width: 900px)")
+scrollFunction(x) // Call listener function at run time
+x.addListener(scrollFunction)
 
-
+console.log(document.body.scrollTop);
+function scrollFunction(x) {
 
       if (window.pageYOffset >= sticky) {
         header.classList.add("sticky");
@@ -345,14 +375,37 @@ function scrollFunction() {
         header.classList.remove("sticky");
       }
 
-  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+if(x.matches){
+     if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+
+       document.getElementById("navbar").style.padding = "0px 0px";
+        $("#navbar-right").css({"padding-top":"0%"});
+       $("#navbar").css({"padding-left": "1%", "padding-right": "1%"});
+       $("#logo").css({"width": "10%"});
+       $("#navtuftsimglink img").css({"width": "100%", "padding-bottom": "0%"});
+        $("#navtuftsimglink").css({"padding-top": ".5%"});
+         $("#navbar-right a").css({"font-size": "2vw"});
+         $("#navbar").css({"background-image": "url(web/img/Background.png)"});
+
+   }else  {
+       document.getElementById("navbar").style.padding = "30px 10px";
+       $("#logo").css({"width": "20%"});
+        $("#navtuftsimglink img").css({"width": "100%", "padding-bottom": "0%"});
+       $("#navbar-right").css({ "padding-top":"1%"});
+       $(" #navbar .nav").css({"padding-top": "1%"});
+        $("#navbar-right a").css({"font-size": "2.5vw"});
+         $("#navbar").css({"background-image": "none"});
+     }
+
+} else {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
 
     document.getElementById("navbar").style.padding = "0px 0px";
-     $("#navbar-right").css({"float": "right", "padding-top":"0%"});
+     $("#navbar-right").css({"padding-top":"0%"});
     $("#navbar").css({"padding-left": "1%", "padding-right": "1%"});
     $("#logo").css({"width": "10%"});
-    $("#navtuftsimglink img").css({"padding-bottom": "0%"});
-     $("#navtuftsimglink").css({"width": "10%", "padding-top": ".5%"});
+    $("#navtuftsimglink img").css({"width": "100%", "padding-bottom": "0%"});
+     $("#navtuftsimglink").css({"padding-top": ".5%"});
       $("#navbar-right a").css({"font-size": "1vw"});
       $("#navbar").css({"background-image": "url(web/img/Background.png)"});
 
@@ -360,13 +413,13 @@ function scrollFunction() {
 } else  {
     document.getElementById("navbar").style.padding = "30px 10px";
     $("#logo").css({"width": "20%"});
-    $("#navtuftsimglink").css({"width": "10%"});
      $("#navtuftsimglink img").css({"width": "100%", "padding-bottom": "0%"});
-    $("#navbar-right").css({"float": "right", "padding-top":"1%"});
+    $("#navbar-right").css({ "padding-top":"1%"});
     $(" #navbar .nav").css({"padding-top": "1%"});
      $("#navbar-right a").css({"font-size": "1.5vw"});
       $("#navbar").css({"background-image": "none"});
   }
+}
 }
 </script>
 
