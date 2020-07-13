@@ -1,40 +1,9 @@
----
-layout: wrapper
----
-<<!DOCTYPE html>
-<html lang="en" dir="ltr">
-     <head>
-          <meta charset="utf-8">
-          <title></title>
-          <style >
-               .squarepic{
-                    width:10vw;height:10vw;
-
-                 object-fit:cover;
-                 border-radius:50%;
-               }
-               .squarecol{
-                 width:10vw;height:10vw;
-                 object-fit:cover;
-                 border-radius:50%;
-               }
-               .work-text, .work-thumb{
-                      border-radius:50%;
-               }
-               .authordisplay{
-                    align-content: center;
-                    text-align:center
-               }
-          </style>
-     </head>
-     <body>
-
 
           <div class="authordisplay row mb-5 no-gutters" style="margin-top: 4rem">
 
               <!-- FIRST PROJECT----------------------------------------------------------->
 
-                   {% for author in site.authors %}
+                   {% for author in project %}
 
                    <div class="squarecol" data-aos="fade" data-aos-delay="100">
 
@@ -58,7 +27,3 @@ layout: wrapper
                {%endfor%}
 
           </div>
-
-
-     </body>
-</html>

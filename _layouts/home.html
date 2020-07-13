@@ -5,76 +5,126 @@ layout: "homewrapper"
 <html lang="en">
 <style>
 
+     .pagetitle{
+          font-size:3vw;
+     }
+     .searchtitle{
+          padding-top:0vw;
+          margin-top:0vw;
+     }
+     .pagesubtitle{
+          font-size:2vw;
+     }
+     @media(max-width:500px) {
+          .pagetitle{
+               font-size:8vw;
+          }
+          .pagesubtitle{
+               font-size:6vw;
+          }
+          .page-section{
+               padding: 0rem;
+          }
+     }
+
+     #searchbox{
+          padding: 1%;
+          width: 30%;
+
+     }
+
+     .page-section{
+          padding-bottom: 0rem;
+     }
+     .search-section{
+          -webkit-box-shadow: inset 0px -1px 17px 0px rgba(0,0,0,0.24);
+-moz-box-shadow: inset 0px -1px 17px 0px rgba(0,0,0,0.24);
+box-shadow: inset 0px -1px 17px 0px rgba(0,0,0,0.24);
+          padding-top: 3rem;
+          background-color:rgb(195,255,143);
+
+          margin: 5rem;
+     }
+     .searchlabel{
+           display: inline;
+           color: #383838;
+           font-size:2vw;
+
+     }
+
 </style>
-
-	<!-- Bootstrap core CSS -->
-  <link href="web/mycss/bootstrap.min.css" rel="stylesheet preload" as="style">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet" >
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet" >
-
-  <!-- Custom styles for this template -->
-  <link href="web/mycss/business-casual.min.css" rel="stylesheet preload" as="style">
-  <link href="web/mycss/business-frontpage.css" rel="stylesheet preload" as="style">
-
-<!--Allison's helper functions for appending content-->
-<script rel="preload" src="web/js/append_helper_functions.js" as="script"></script>
-<script rel="preload" src="web/js/create_website.js" as="script"></script>
-<!-- Custom styles for this template -->
-   <link rel="preload stylesheet" href="web/mycss/style1.css" as="style">
-
-<!-- Theme Style -->
-<link rel="preload stylesheet" href="web/mycss/style.css" as="style">
 
 <body>
 
 
+<!--....FEATURED PROJECTS...................................................................................-->
 <section class="page-section clearfix" style = "margin-top:0rem;margin-bottom:5rem">
 <div class="container" style="margin-top:5rem" >
 
 
 	 <div class="col-md-6" style="margin-left: auto; margin-right: auto; margin-bottom: 1.5rem ">
-		  <center><h1 style="color: #000;font-size:350%,">OUR PROJECTS</h1></center>
+		  <center><h1 class="pagetitle" style="text-transform:uppercase; color:  #000; ">Featured Projects</h1></center>
     	</div>
 
-	<center><p style="font-size:30px">CEEO INNOVATIONS PROJECTS</p></center>
-	<!--.......................................................................................-->
+	<center><p class="pagesubtitle" >CEEO INNOVATIONS PROJECTS</p></center>
 
  	 <div class="row mb-5 no-gutters" style="margin-top: 4rem">
-
-		<!-- FIRST PROJECT----------------------------------------------------------->
-
 			{% for project in site.projects %}
 
 		  	<div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay="100">
-
-	 	 	 <!--REPLACE PROJECT LINK HERE -->
-		 	  <!--<a href=(copy and paste the project web link here) class="work-thumb"> -->
 	  	 	   <a rel="preload"  href="{{ project.url | prepend: site.baseurl | replace: '//', '/' }}" class="work-thumb">
 	    	 	    <div class="work-text">
-		 	 <!--Change project name here -->
-	 	 	 <!--<h2>(put your content here)</h2>-->
-	 	 	      <h2>{{project.title}}</h2>
-	   		 <!--.......................................................................................-->
-	 	 	      <p>CEEO INNOVATIONS</p>
-	  		     </div>
-	 		 <!-- Repalce project background image here -->
-	 	 	<!--<img src=(paste image path here) alt="Image" class="img-fluid" style="max-height: 40%">-->
-				<img src="{{project.displayimg | prepend: 'project_assets/'}}" alt="Image" class="img-fluid" style=" border-color:rgba(246,245,245,1); max-height: 40%; width: 100%">
-	  	 	<!--.......................................................................................-->
+	 	 	           <h2>{{project.title}}</h2>
+	 	 	           <p>CEEO INNOVATIONS</p>
+	  		    </div>
+			    <img src="{{project.displayimg | prepend: 'project_assets/'}}" alt="Image" class="img-fluid" style=" border-color:rgba(246,245,245,1); max-height: 40%; width: 100%">
 	 		   </a>
-			  </div>
+		    </div>
 
 	 	 {%endfor%}
 
-           <div id = "mycontent"></div>
 
 
       </div>
 	</div>
 
   </section>
+
+
+ <section class="search-section page-section clearfix" style = "margin-top:0rem;margin-bottom:5rem">
+     <div class="container" >
+
+                  <div class="col-md-6" style="margin-left: auto; margin-right: auto; margin-bottom: 1.5rem ">
+            		  <center><h1 class="pagetitle searchtitle" style="text-transform:uppercase; color:  #000;">Discover Projects</h1></center>
+                	</div>
+
+               <!-- Html Elements for Search -->
+               <div id="searchbox">
+                    <h4 class="searchlabel"> Search  </h4>
+                    <div style="display: inline" id="search-container">
+                         <input type="text" id="search-input" placeholder="search...">
+                    </div>
+               </div>
+
+               <div>
+
+               <div id="results-container"class="row mb-5 no-gutters" style="padding-bottom:8rem;"></div>
+
+               <!-- Script pointing to search-script.js -->
+               <script src="web/js/search_script.js" type="text/javascript"></script>
+
+               <!-- Configuration -->
+               <script>
+               SimpleJekyllSearch({
+                 searchInput: document.getElementById('search-input'),
+                 resultsContainer: document.getElementById('results-container'),
+                 json: '/search.json'
+               })
+               </script>
+     </div>
+</section>
+
+
   </body>
 
   <script src="web/js/bootstrap.bundle.min.js"></script>
