@@ -1,8 +1,7 @@
 ---
 layout: post
 displayimg: spike-prime-backpacks/backpack2.png
-
-authors: Gary Wong, Grace Trudy
+authors: ["Kristen Wendell", "Ethan Danahy", "Meredith Portsmith"]
 
 ---
 

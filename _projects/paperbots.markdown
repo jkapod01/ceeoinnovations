@@ -1,6 +1,7 @@
 ---
 layout: post
 displayimg: paper-bots/PaperBotsLogo.png
+authors: Gary Wong, Grace Trudy
 ---
 
 <div class="sitetitle" markdown="1">

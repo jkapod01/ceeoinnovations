@@ -1,9 +1,23 @@
 
-          <div class="authordisplay row mb-5 no-gutters" style="margin-top: 4rem">
+<style>
+
+.squarecol, .squarepic{
+     border-radius: 50%;
+     margin: 0 auto
+}
+
+.squarecol, .squarepic{
+     border-radius: 50%;
+     height: 15vw;
+     width: 15vw;
+}
+.work_thumb, .work_text, {
+     border-radius: 50%;
+}
+</style>
 
               <!-- FIRST PROJECT----------------------------------------------------------->
 
-                   {% for author in project %}
 
                    <div class="squarecol" data-aos="fade" data-aos-delay="100">
 
@@ -13,17 +27,13 @@
                       <div class="work-text">
                     <!--Change project name here -->
                     <!--<h2>(put your content here)</h2>-->
-                         <h2>{{author.name}}</h2>
+                         <h2>{{ include.name }}</h2>
                     <!--.......................................................................................-->
-                         <p>CEEO INNOVATIONS</p>
+                         <p>{{ include.position }}</p>
                         </div>
                     <!-- Repalce project background image here -->
                    <!--<img src=(paste image path here) alt="Image" class="img-fluid" style="max-height: 40%">-->
-                        <img src="{{author.image | prepend: 'authors/profilepics/'}}" alt="Image" class="img-fluid squarepic" style="border-color:rgba(246,245,245,1); ">
+                        <img src="{{include.image}}" alt="Image" class="img-fluid squarepic" style="border-color:rgba(246,245,245,1); ">
                    <!--.......................................................................................-->
                       </a>
                     </div>
-
-               {%endfor%}
-
-          </div>

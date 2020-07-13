@@ -42,6 +42,25 @@
 <div id="myappendcontent">
 </div>
 
+<div class="authordisplay row mb-5 no-gutters" style="margin-top: 4rem">
+ {% for this_author in page.authors%}
+ {% assign author_data = site.authors | where: 'name', this_author %}
+     {% if this_author %}
+     {% capture this_name %}
+          {{ author_data[0].name | strip_newlines }}
+     {% endcapture %}
+     {% capture this_pos %}
+          {{ author_data[0].position | strip_newlines }}
+     {% endcapture %}
+
+     {% capture this_image %}
+          {{ author_data[0].image  | prepend: '../authors/profilepics/' | strip_newlines }}
+     {% endcapture %}
+     {% include author_section.html name=this_name position=this_pos image=this_image %}
+     {% endif %}
+{% endfor %}
+          </div>
+
 
 <h2 class="voidvalue"></h2>
 <h1 class="voidvalue"></h1>
