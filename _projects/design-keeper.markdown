@@ -29,13 +29,12 @@ This design notebook can spark informed decision-making and thoughtful collabora
 *Problem: Define the criteria, constraints, and method for testing possible solution*
 </div>
 
-<div class="free_write" markdown="1">
-# Create an account with Design Keeper online
+<div class="image_text_overlay" markdown="1">
 ![Image of design keeper](design-keeper/design_keep_3.jpeg)
-
-### Use your design keeper account to make your own digital engineering design notebooks.
-#### Access the website [here](http://www.designkeeper.me/users/sign_in).
-#### Download the app [Here](https://apps.apple.com/us/app/design-keeper/id1333514520).
+# Make your own design keeper
+## Create an account with Design Keeper online
+Access the website [here](http://www.designkeeper.me/users/sign_in).
+Download the app [Here](https://apps.apple.com/us/app/design-keeper/id1333514520).
 </div>
 
 <div class="free_write" markdown="1">
@@ -44,8 +43,6 @@ This design notebook can spark informed decision-making and thoughtful collabora
 - Wendell, K.B., Andrews, C., Paugh, P. (2018), Multimodal engineering design notebooks and meta-representational competence. Proceedings of the International Conference of the Learning Sciences.
 - Wendell, K. B., Andrews, C. J., & Paugh, P. (2019). Supporting knowledge construction in elementary engineering design. Science Education, 103(4), 952-978. DOI: https://doi.org/10.1002/sce.21518
 </div>
-
-
 
 <div class="video_text_overlay" markdown="1">
 [Design Keeper Speech](https://youtu.be/iXZ8kaC7NfA)
