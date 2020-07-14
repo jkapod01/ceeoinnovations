@@ -101,8 +101,7 @@ box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.14);
 
            {% assign my_variable = 100 %}
 			{% for project in site.projects %}
-               
-               {% if project.url != "/projects/SAMPLE_FILE" %}
+               {% if project.url != "/projects/SAMPLE_FILE.html" %}
 		  	<div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay={{my_variable}}>
 	  	 	   <a rel="preload"  href="{{ project.url | prepend: site.baseurl | replace: '//', '/' }}" class="work-thumb">
 	    	 	    <div class="work-text">
