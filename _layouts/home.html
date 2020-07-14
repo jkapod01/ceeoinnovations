@@ -101,7 +101,8 @@ box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.14);
 
            {% assign my_variable = 100 %}
 			{% for project in site.projects %}
-
+               
+               {% if project.url != "/projects/SAMPLE_FILE" %}
 		  	<div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay={{my_variable}}>
 	  	 	   <a rel="preload"  href="{{ project.url | prepend: site.baseurl | replace: '//', '/' }}" class="work-thumb">
 	    	 	    <div class="work-text">
@@ -113,7 +114,7 @@ box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.14);
 		    </div>
 
               {% assign my_variable = my_variable  | plus: 75 %}
-
+              {%endif%}
 	 	 {%endfor%}
 
 
@@ -155,8 +156,8 @@ box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.14);
                     {% for i in site.my_categories %}
                             {% for project in site.projects %}
                             {% if project.categories contains i %}
-                             <div  class="{{i | replace: " ", "_"}} col-sm-3 col-md-3 col-lg-3" style="display:none" data-aos="fade" data-aos-delay="100">
-                               <a rel="preload"  href="{{ project.url | prepend: site.baseurl | replace: '//', '/' }}" class="work-thumb">
+                          <div  class="{{i | replace: " ", "_"}} col-sm-3 col-md-3 col-lg-3" style="display:none" data-aos="fade" data-aos-delay="100">
+                                <a rel="preload"  href="{{ project.url | prepend: site.baseurl | replace: '//', '/' }}" class="work-thumb">
                                  <div class="work-text">
                                        <h2>{{project.title}}</h2>
                                        <p>CEEO INNOVATIONS</p>
@@ -187,11 +188,22 @@ box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.14);
 
  <script>
 
+      input.addEventListener('input', evt => {
+        const value = input.value;
+        console.log("value");
+        if (!value) {
+          input.dataset.state = '';
+          return;
+        }
+
+
       SimpleJekyllSearch({
          searchInput: document.getElementById('search-input'),
          resultsContainer: document.getElementById('results-container'),
          json: '/search.json'
        })
+
+
 </script>
 
 <script type="text/javascript">
@@ -213,6 +225,8 @@ box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.14);
              }
             console.log(button);
             var button_id = button.id;
+
+
             var class_arr = document.getElementsByClassName(button_id);
             console.log(class_arr);
             $(class_arr).css({"display": "inline"});

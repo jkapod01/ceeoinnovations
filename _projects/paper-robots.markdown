@@ -21,26 +21,19 @@ creating educational robots for any age.
 
 # Pull-up Man
 ## A mobile system for creating a dynamic figure
-
 Pull-up Man is a demonstration of rotational motion converted into linear motion.  It is a simple 2D cam action toy made from cardstock and brass fasteners.  A cam linkage on the back side converts the rotary motion of the crank to the linear motion of the man.  Here are the pieces that make up this kit:
-
 ![Pull Up Man Pieces](paper-bots/pull-up-pieces.jpeg)
-
 ### Required Pieces
-
 - 4 arm segments
 - body segment
 - 4 leg segments
 - 16 pins
-
  Students can customize/decorate the final product to personalize to their liking.
-
 > The pull up man is my favorite "PaperBots" project
 >
 > -a Student
-
-
 ### Attach motors to Pull-Up man using this simple code:
+
 ```
 .void Pull_Up(int max_strength){
      for (int i = 0; i < max_strength; i++){
@@ -49,12 +42,9 @@ Pull-up Man is a demonstration of rotational motion converted into linear motion
 }
 
 ```
-
 ![Final pull up man](paper-bots/pullup-man-assembled.jpeg)
-
 ### Here is a photo of
 ### the final product:
-
 </div>
 
 <div class="pdf" markdown="1">
