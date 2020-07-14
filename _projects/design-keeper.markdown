@@ -33,7 +33,7 @@ This design notebook can spark informed decision-making and thoughtful collabora
 
 <div class="free_write" markdown="1">
 # Create an account with Design Keeper online
-![Image of design keeper](design-keeper/design_keep_3.jpg)
+![Image of design keeper](design-keeper/design_keep_3.jpeg)
 
 Use your design keeper account to make your own digital engineering design notebooks.
 ### Access the website [here](http://www.designkeeper.me/users/sign_in).
