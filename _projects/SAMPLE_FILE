@@ -6,19 +6,19 @@ displayimg: IMAGEFILENAME/IMGNAME
 # YOUR SITE TITLE
 </div>
 
-<div class="video-text-overlay" markdown="1">
-<!--PASTE AN IFRAME LINK HERE-->
-## YOUR VIDEO SUBTITLE
+<div class="video_text_overlay" markdown="1">
+[TITLE OF VIDEO](--- paste a youtu.be link here--)
 # YOUR VIDEO TITLE
+## YOUR VIDEO SUBTITLE
 THIS IS WHERE YOU CAN WRITE A DESCRIPTION ABOUT YOUR VIDEO.
 </div>
 
 
 <div class="largeheaderimg" markdown="1">
-![TITLE OF IMAGE](----NAME OF IMAGE FILE----)
-## YOUR IMAGE SUBTITLE
+![TITLE OF IMAGE](----IMAGEFILENAME/IMGNAME ----)
 # YOUR IMAGE TITLE
-TTHIS IS WHERE YOU CAN WRITE A DESCRIPTION ABOUT YOUR IMAGE.
+## YOUR IMAGE SUBTITLE
+THIS IS WHERE YOU CAN WRITE A DESCRIPTION ABOUT YOUR IMAGE.
 </div>
 
 <div class="pdf" markdown="1">
@@ -27,3 +27,31 @@ TTHIS IS WHERE YOU CAN WRITE A DESCRIPTION ABOUT YOUR IMAGE.
 [TITLE OF PDF](---NAME OF PDF FILE--.pdf)
 <!-- insert as many links here as you want to dynamically create a grid of pdfs-->
 </div>
+
+<div class="free_write" markdown="1">
+
+# Include anything you want here
+In any order 
+##  You can do titles or sub titles
+
+or add paragraphs as well
+
+![TITLE OF IMAGE](----IMAGEFILENAME/IMGNAME ----)
+### or do sub sub title
+
+- or 
+- make
+- bulleted 
+- losts
+
+```
+void You_Can_Write_Code(int by){
+     Writing();
+      Your_Code_Between_Backticks();
+     }
+}
+```
+
+</div>
+
+
