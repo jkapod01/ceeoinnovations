@@ -1,7 +1,7 @@
 ---
 layout: post
 displayimg: nedlams-workshop/students.jpg
-categories: ["Makerspace"]
+categories: ["Makerspaces"]
 authors: []
 
 ---
