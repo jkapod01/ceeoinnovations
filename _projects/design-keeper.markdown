@@ -2,7 +2,7 @@
 layout: post
 displayimg: design-keeper/design_keeper.jpg
 categories: ["Lesson Plans"]
-authors: ["John, Doe"]
+authors: []
 ---
 <!--SITE_TITLE creates a title for your webpage----------------->
 <div class="site_title" markdown="1">
@@ -43,5 +43,17 @@ This design notebook can spark informed decision-making and thoughtful collabora
 - Paugh, P., Wendell, K., & Wright, C. (2018). Elementary engineering as a synergistic site for disciplinary and linguistic learning in an urban classroom. Literacy Research: Theory, Method, and Practice. DOI: https://doi.org/10.1177/2381336918786937
 - Wendell, K.B., Andrews, C., Paugh, P. (2018), Multimodal engineering design notebooks and meta-representational competence. Proceedings of the International Conference of the Learning Sciences.
 - Wendell, K. B., Andrews, C. J., & Paugh, P. (2019). Supporting knowledge construction in elementary engineering design. Science Education, 103(4), 952-978. DOI: https://doi.org/10.1002/sce.21518
+</div>
+
+<div class="image_text_overlay" markdown="1">
+![design keeper head](design-keeper/design_keeper_head.jpg)
+# Meet Design Keeper
+Design Keeper is a digital notebooking app designed for keeping track of engineering design projects (and more!).
+</div>
+
+<div class="video_text_overlay" markdown="1">
+[Design Keeper Speech](https://youtu.be/iXZ8kaC7NfA)
+# Launch of Design Keeper App
+The Center for Engineering Education and Outreach (CEEO) launches their new Design Keeper application at the LEGO Education Symposium and Tufts STEM Education Conference. More information can be found at designkeeper.me
 </div>
 
