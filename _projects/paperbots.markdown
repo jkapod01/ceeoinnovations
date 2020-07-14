@@ -1,7 +1,8 @@
 ---
 layout: post
 displayimg: paper-bots/PaperBotsLogo.png
-authors: Gary Wong, Grace Trudy
+authors: ["Gary Wong", "Grace Trudy"]
+categories: ["Robotics", "Lesson Plans"]
 ---
 
 <div class="sitetitle" markdown="1">

@@ -1,6 +1,7 @@
 ---
 layout: post
 displayimg: paper-bots/horizontal_paperbots_car.jpeg
+categories: ["Lesson Plans", "Robotics"]
 ---
 
 <div class="site_title" markdown="1">

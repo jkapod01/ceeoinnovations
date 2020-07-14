@@ -8,7 +8,7 @@
       "url"      : "{{ site.baseurl }}{{ project.url }}",
       "displayimg" : "{{ project.displayimg  | prepend: 'project_assets/'}}",
       "authors"     : "{{ project.authors | join: ', ' }}",
-      "category" : "{{ project.category }}",
+      "categories" : "{{ project.categories }}",
       "tags"     : "{{ project.tags | join: ', ' }}",
       "date"     : "{{ project.date }}"
 

@@ -151,14 +151,14 @@
     }
 
     function j(t) {
-        throw new Error("SimpleJekyllSearch --- " + t)
+        throw new Error("ButtonJekyllSearch --- " + t)
     }
     t = window, m = {
         searchInput: null,
         resultsContainer: null,
         json: [],
         success: Function.prototype,
-        searchResultTemplate: '<div class="col-sm-3 col-md-3 col-lg-3" data-aos="fade" data-aos-delay="100"><a rel="preload"  href="{url}" class="work-thumb"><div class="work-text"><h2>{title}</h2><p>CEEO INNOVATIONS</p></div> <img src="{displayimg}" alt="Image" class="img-fluid" style=" border-color:#fff; max-height: 40%; width: 100%"> </a></div>',
+        searchResultTemplate: '<div class="col-sm-3 col-md-3 col-lg-3" data-aos="fade" data-aos-delay="100"><a rel="preload"  href="{url}" class="work-thumb"><div class="work-text"><h2>{title}</h2><p>CEEO INNOVATIONS</p></div> <img src="{displayimg}" alt="Image" class="img-fluid" style=" border-color:rgb(195,255,143); max-height: 40%; width: 100%"> </a></div>',
         templateMiddleware: Function.prototype,
         sortMiddleware: function() {
             return 0
@@ -196,7 +196,7 @@
         })), {
             search: S
         }
-    }, t.SimpleJekyllSearch = function(t) {
+   }, t.ButtonJekyllSearch = function(t) {
         var e = y(t);
         return t.success.call(e), e
     }

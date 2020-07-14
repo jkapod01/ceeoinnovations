@@ -2,7 +2,7 @@
 layout: post
 displayimg: spike-prime-backpacks/backpack2.png
 authors: ["Kristen Wendell", "Ethan Danahy", "Meredith Portsmith"]
-
+categories: ["Robotics", "Spike Prime"]
 ---
 
 

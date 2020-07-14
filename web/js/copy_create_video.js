@@ -10,6 +10,23 @@ function CreateVideoMain(){
      CreateSectionsByVideoDiv(mydivs);
 }
 
+
+SimpleJekyllSearch({
+searchInput: document.getElementById('secretsearch'),
+resultsContainer: document.getElementById('results-container'),
+json: '/search.json'
+});
+
+
+var buttons = document.getElementsByClass("myButton");
+(for j = 0; j < buttons.length; j++){
+buttons[j].addEventListener("click", ButtonAssigner(buttons(j) ) );
+ }
+
+function ButtonAssigner(button) {
+document.getElementById("secretsearch").innerHTML = button.innerHTML;
+}
+
 /*CollectAllDivs
  *Collect an Array of all the divs in the Markdown file
 * And return that Array

@@ -1,5 +1,6 @@
 ---
 layout: post
+categories:  ["Lesson Plans"]
 displayimg: novel-engineering/novel_engineering.png
 ---
 
