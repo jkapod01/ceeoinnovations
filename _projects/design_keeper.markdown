@@ -3,7 +3,6 @@ layout: post
 displayimg: design_keeper/design_keeper.jpg 
 categories: ["Lesson Plans"]
 authors: ["Kristen Wendell"]
-
 ---
 <!--SITE_TITLE creates a title for your webpage----------------->
 <div class="site_title" markdown="1">
