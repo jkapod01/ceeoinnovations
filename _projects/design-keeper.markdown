@@ -45,11 +45,7 @@ This design notebook can spark informed decision-making and thoughtful collabora
 - Wendell, K. B., Andrews, C. J., & Paugh, P. (2019). Supporting knowledge construction in elementary engineering design. Science Education, 103(4), 952-978. DOI: https://doi.org/10.1002/sce.21518
 </div>
 
-<div class="image_text_overlay" markdown="1">
-![design keeper head](design-keeper/design_keeper_head.jpg)
-# Meet Design Keeper
-Design Keeper is a digital notebooking app designed for keeping track of engineering design projects (and more!).
-</div>
+
 
 <div class="video_text_overlay" markdown="1">
 [Design Keeper Speech](https://youtu.be/iXZ8kaC7NfA)
