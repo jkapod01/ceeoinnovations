@@ -12,7 +12,7 @@ authors: []
 
 <!--IMAGE_TEXT_OVERLAY creates a image with a text box over it--------------------->
 <div class="image_text_overlay" markdown="1">
-![Makerspace Banner](nedlams-workshop/workshop)
+![Makerspace Banner](nedlams-workshop/workshop.jpg)
 # Nedlam's Workshop
 ## The Malden Maker Space
 
@@ -53,10 +53,10 @@ This segment from WBUR covers the transformation of the Malden woodworking shop 
 </div>
 
 <div class="free_write" markdown="1">
-# Connect with Malden Makerspace
+### Connect with Malden Makerspace
 ![Some Art](nedlams-workshop/RT.jpg)
-### Connect on [facebook](https://www.facebook.com/nelamsworkshop/)
-### Connect on [twitter](https://twitter.com/makerswelcomed?lang=en)
+#### Connect on [facebook](https://www.facebook.com/nelamsworkshop/)
+#### Connect on [twitter](https://twitter.com/makerswelcomed?lang=en)
 
 </div>
 
