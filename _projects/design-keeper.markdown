@@ -21,10 +21,8 @@ Design Keeper is a digital notebooking app designed for keeping track of enginee
 <div class="free_write" markdown="1">
 # What is design keeper?
 
-An engineering design notebooking tool for upper elementary, middle, and high school students. Seven different notebook page templates help students document their problem-solving process as they carry out key practices of engineering design. Specific prompts for photos, videos, and text align with each practice and help learners keep multimedia records of their thinking, building, and testing.
-
 ![Image of design keeper](design-keeper/kid-with-ipad.jpg)
-
+An engineering design notebooking tool for upper elementary, middle, and high school students. Seven different notebook page templates help students document their problem-solving process as they carry out key practices of engineering design. Specific prompts for photos, videos, and text align with each practice and help learners keep multimedia records of their thinking, building, and testing.
 This design notebook can spark informed decision-making and thoughtful collaboration between design team members, and help students and teachers collaboratively construct knowledge as they carry out engineering design processes.
 
 *Seven color-coded notebook page templates:*
@@ -35,9 +33,9 @@ This design notebook can spark informed decision-making and thoughtful collabora
 # Create an account with Design Keeper online
 ![Image of design keeper](design-keeper/design_keep_3.jpeg)
 
-Use your design keeper account to make your own digital engineering design notebooks.
-### Access the website [here](http://www.designkeeper.me/users/sign_in).
-### Download the app [Here](https://apps.apple.com/us/app/design-keeper/id1333514520).
+### Use your design keeper account to make your own digital engineering design notebooks.
+#### Access the website [here](http://www.designkeeper.me/users/sign_in).
+#### Download the app [Here](https://apps.apple.com/us/app/design-keeper/id1333514520).
 </div>
 
 <div class="free_write" markdown="1">
