@@ -197,8 +197,8 @@ function CreateFreeWrite(mydivsi){
      var myimages = newdiv.getElementsByTagName("img");
      for (var i = 0; i < myimages.length; i++){
           console.log("myimage[i].href");
-          console.log(myimages[i].src));
-          console.log(is_url(myimages[i].src)));
+          console.log(myimages[i].src);
+          console.log(is_url(myimages[i].src));
               if (!(is_url(myimages[i].src)))
               {
           $(myimages[i]).attr('src' , "../project_assets/" + $(myimages[i]).attr('src'));
