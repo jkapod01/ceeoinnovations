@@ -28,8 +28,8 @@ function CollectAllDivs(){
                 CreateSiteTitle(mydivs[i]);
            } else if ( mydivs[i].classList.contains("image_text_overlay")){
                 CreateHeaderImg(mydivs[i]);
-           }else if ( mydivs[i].classList.contains("pdf")){
-               CreatePDFs(mydivs[i]);
+           }else if ( mydivs[i].classList.contains("document")){
+               CreateDocuments(mydivs[i]);
 
           } else if ( mydivs[i].classList.contains("video_text_overlay")){
                  CreateHeaderVideo(mydivs[i]);
@@ -55,8 +55,6 @@ function CreateLinks(mydivsi){
                var mylinkarray = mydivsi.getElementsByTagName('a');
                var mylinkparray = mydivsi.getElementsByTagName('p');
 
-               console.log("mylinkparray");
-               console.log(mylinkparray);
 
 
                var largernewdivPI = CreatenewDiv("largerdatasection", "largerpdfsampledatasection");
@@ -69,7 +67,7 @@ function CreateLinks(mydivsi){
 
                //Create new div that copies append here to append pdfs to
                //var pdfcontain = CreatenewDiv("sampleappendherePI row mb-5 no-gutters","sampleappendherePI");
-               console.log("PDF CONTAIN")
+
                var pdfcontain = document.createElement("div");
                pdfcontain.className = "sampleappendherePI row mb-5 no-gutters";
                pdfcontain = CreatePdfGrid(pdfcontain, mydivsi, mylinkarrayPI);
@@ -150,12 +148,25 @@ function AddHreftoNewDiv(get_class, at_place, copy_this_data, search_here){
 
 function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
+         if (!(is_url(copy_this_data.href))){
     $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
-
+}
      copyhere.src = copy_this_data.href;
      return copyhere;
 }
-
+//reffed from Ashish Kumar's work here https://www.quora.com/What-is-the-best-way-to-validate-for-a-URL-in-JavaScript
+function is_url(str)
+{
+  regexp =  /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/;
+        if (regexp.test(str))
+        {
+          return true;
+        }
+        else
+        {
+          return false;
+        }
+}
 
 
 //CREATEFREEWRITE==============================================================
@@ -181,7 +192,10 @@ function CreateFreeWrite(mydivsi){
 
      var myimages = newdiv.getElementsByTagName("img");
      for (var i = 0; i < myimages.length; i++){
+              if (!(is_url(myimages[i].src)))
+              {
           $(myimages[i]).attr('src' , "../project_assets/" + $(myimages[i]).attr('src'));
+               }
           $(myimages[i]).attr('class' , "imgOnly col-sm-6 col-md-6 col-lg-6");
 
      }
@@ -227,8 +241,6 @@ function CreateFreeWrite(mydivsi){
      }
      //append content to "appendhere"
      var append_div_here = document.getElementById("myappendcontent");
-     console.log("appending new free write div.........");
-     console.log(newdiv.innerHTML);
 
      append_div_here.appendChild(newdiv);
 
@@ -304,7 +316,7 @@ function CreateHeaderVideo(mydivsi){
 }
 
 //CREATE PDF=======================================================
-function CreatePDFs(mydivsi){
+function CreateDocuments(mydivsi){
                //initialize values from markdown to ter to header
                var sectionheaderPI = CollectmyHeader(mydivsi);
 
@@ -410,15 +422,24 @@ function AddHreftoNewDiv(get_class, at_place, copy_this_data, search_here){
 
 function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
-    $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
+   // $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
+    if (!(is_url(copy_this_data.href))){
+         $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
 
+    }
+;
      copyhere.src = copy_this_data.href;
+     copyhere.href = copy_this_data.href;
      return copyhere;
 }
 function AddHreftoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
-     //$(copy_this_data).attr('href' , "../web/pdf/" + $(copy_this_data).attr('href'));
-    // $(copy_this_data).attr('href' , "../web/pdf/" + $(copy_this_data).attr('href'));
+
+    if (!(is_url(copy_this_data.href))){
+         $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
+
+    }
+     copyhere.src = copy_this_data.href;
      copyhere.href = copy_this_data.href;
      return copyhere;
 }
@@ -442,8 +463,9 @@ function CreateHeaderImg(mydivsi){
      var myp = CheckifVoidandAssign_P_Gen(mydivsi);
 
      var myimg = CheckifVoidandAssign_Img_Gen(0, mydivsi);
+     if (!(is_url(myimg.src))){
      $(myimg).attr('src' , "../project_assets/" + $(myimg).attr('src'));
-
+}
 
      //create new div and copy sample data
      var newdiv = document.createElement("div");
