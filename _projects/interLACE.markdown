@@ -30,13 +30,9 @@ InterLACE is an interactive digital white-board interface for putting student id
 ![interlace data 1](interLace/interlacedata1.jpg)
 ![TITLE OF IMAGE](interLace/interlacedata2.jpg)
 
-<<<<<<< HEAD
-InterLACE lets students quickly capture and share their work to shift the focus of classrooms from "what the teacher knows"
-to "what the students think". It promotes collaborative, engaging learning.
-=======
 Interface lets students quickly capture and share their work to shift the focus of classrooms from "what the teacher knows"
-to "what the students think. It promotes collaborative, engaging learning. 
->>>>>>> 183d1866c81a520fd408f7f8ab57c33c6bc521bb
+to "what the students think. It promotes collaborative, engaging learning.
+
 </div>
 
 <!--FREE WRITE lets you write any markdown you want (include images, lists, titles, code,etc)
@@ -44,13 +40,10 @@ to "what the students think. It promotes collaborative, engaging learning.
 <div class="free_write" markdown="1">
 # Get started with InterLACE
 ![filler image](interLace/sideResearch.jpg)
-<<<<<<< HEAD
+
 
 The on-going NSF-sponsored research project InterLACE (Interactive Learning and Collaboration Environment) at Tufts University spun off to a commercialized product called Visual Classrooms.
-=======
-  
-The on-going NSF-sponsored research project InterLACE (Interactive Learning and Collaboration Environment) at Tufts University spun off to a commercialized product called Visual Classrooms. 
->>>>>>> 183d1866c81a520fd408f7f8ab57c33c6bc521bb
+
 [Sign up to use interLACE at https://visualclassrooms.com/](https://visualclassrooms.com/)
 </div>
 
@@ -58,18 +51,11 @@ The on-going NSF-sponsored research project InterLACE (Interactive Learning and 
                If something doesn't look how you expect on the page, try adding a linebreak after it--------------------->
 <div class="free_write" markdown="1">
 ### Learn more about interLACE
-<<<<<<< HEAD
+
 
 - [CADREK Project Site](https://cadrek12.org/projects/interlace-interactive-learning-and-collaboration-environment)
 - [CEEO Research Page](http://ceeo.tufts.edu/research/projectsinterlace.htm)
-=======
-  
-- [CADREK Project Site](https://cadrek12.org/projects/interlace-interactive-learning-and-collaboration-environment)
-- [CEEO Research Page](http://ceeo.tufts.edu/research/projectsinterlace.htm)
-  
-The on-going NSF-sponsored research project InterLACE (Interactive Learning and Collaboration Environment) at Tufts University spun off to a commercialized product called Visual Classrooms. 
+
+The on-going NSF-sponsored research project InterLACE (Interactive Learning and Collaboration Environment) at Tufts University spun off to a commercialized product called Visual Classrooms.
 [Sign up to use interLACE at https://visualclassrooms.com/](https://visualclassrooms.com/)
-</div>
->>>>>>> 183d1866c81a520fd408f7f8ab57c33c6bc521bb
-
 </div>
