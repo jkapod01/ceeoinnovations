@@ -148,6 +148,10 @@ function AddHreftoNewDiv(get_class, at_place, copy_this_data, search_here){
 
 function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
+
+          console.log("copy_this_data.href");
+          console.log(copy_this_data.href);
+          console.log(is_url(copy_this_data.href));
          if (!(is_url(copy_this_data.href))){
     $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
 }
@@ -192,6 +196,9 @@ function CreateFreeWrite(mydivsi){
 
      var myimages = newdiv.getElementsByTagName("img");
      for (var i = 0; i < myimages.length; i++){
+          console.log("myimage[i].href");
+          console.log(myimages[i].src));
+          console.log(is_url(myimages[i].src)));
               if (!(is_url(myimages[i].src)))
               {
           $(myimages[i]).attr('src' , "../project_assets/" + $(myimages[i]).attr('src'));

@@ -215,11 +215,14 @@ ul li:nth-child(even)::before {
      border-color:rgba(246,245,245,1);
     min-height: 400px;
      width: 100%;
+
 }
+
 iframe{
     border: none;
     width:90%;
 }
+
 .pdf-segment{
     margin: 3%;
 background-color: #fff;

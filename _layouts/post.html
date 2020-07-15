@@ -37,11 +37,14 @@ layout: "wrapper"
 
           <script>
           console.log("hi?");
-          $("#mypdf").on("load", function() {
-               let head = $("#mypdf").contents().find("head");
-               let css = '<style>img{width:100%;}</style>';
+          var mypdf = document.getElementsByClassName('mypdf');
+          for(let i = 0; i <mypdf.length; i++){
+          $(mypdf[i]).on("load", function() {
+               let head = $(mypdf[i]).contents().find("head");
+               let css = '<style>img{width:100%;body{zoom: 0.05;}</style>';
                $(head).append(css);
           });
+     }
           </script>
 </body>
 </html>
