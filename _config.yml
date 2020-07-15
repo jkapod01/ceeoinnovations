@@ -35,6 +35,7 @@ my_categories:
   - Ev3/NXT
   - Robotics
   - Makerspaces
+  - Tech
 
 # Build settings
 theme: minima
