@@ -152,7 +152,7 @@ function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_
           console.log("copy_this_data.href");
           console.log(copy_this_data.href);
           console.log(is_url(copy_this_data.href));
-         if (!(is_url(copy_this_data.href))){
+         if (!(is_url(copy_this_data.href)) || copy_this_data.href.indexOf("/ceeoinnovations") >= 0 ){
     $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
 }
      copyhere.src = copy_this_data.href;
@@ -199,7 +199,7 @@ function CreateFreeWrite(mydivsi){
           console.log("myimage[i].href");
           console.log(myimages[i].src);
           console.log(is_url(myimages[i].src));
-              if (!(is_url(myimages[i].src)))
+              if (!(is_url(myimages[i].src)) || myimages[i].src.indexOf("/ceeoinnovations") >= 0)
               {
           $(myimages[i]).attr('src' , "../project_assets/" + $(myimages[i]).attr('src'));
                }
@@ -430,7 +430,7 @@ function AddHreftoNewDiv(get_class, at_place, copy_this_data, search_here){
 function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
    // $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
-    if (!(is_url(copy_this_data.href))){
+    if (!(is_url(copy_this_data.href)) || copy_this_data.href.indexOf("/ceeoinnovations") >= 0   ){
          $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
 
     }
@@ -442,7 +442,7 @@ function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_
 function AddHreftoNewDiv_Prepend(get_class, at_place, copy_this_data, search_here){
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
 
-    if (!(is_url(copy_this_data.href))){
+    if (!(is_url(copy_this_data.href)) || copy_this_data.href.indexOf("/ceeoinnovations") >= 0 ){
          $(copy_this_data).attr('href' , "../project_assets/" + $(copy_this_data).attr('href'));
 
     }
@@ -470,7 +470,7 @@ function CreateHeaderImg(mydivsi){
      var myp = CheckifVoidandAssign_P_Gen(mydivsi);
 
      var myimg = CheckifVoidandAssign_Img_Gen(0, mydivsi);
-     if (!(is_url(myimg.src))){
+     if (!(is_url(myimg.src)) || myimg.src.indexOf("/ceeoinnovations") >= 0 ){
      $(myimg).attr('src' , "../project_assets/" + $(myimg).attr('src'));
 }
 
