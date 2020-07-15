@@ -375,6 +375,9 @@ position: relative;
      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
      width:65%;
 }
+.free_write_content p{
+     font-size: 1.1rem;
+}
 @media(max-width:992px) {
      .free_write_content{
           width:85%;
