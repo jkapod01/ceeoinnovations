@@ -2,6 +2,7 @@
 ---
 [
   {% for project in site.projects %}
+   {% if project.url != "/projects/SAMPLE-FILE.html" %}
     {
 
       "title"    : "{{ project.title | escape }}",
@@ -13,5 +14,6 @@
       "date"     : "{{ project.date }}"
 
     } {% unless forloop.last %},{% endunless %}
+    {% endif %}
   {% endfor %}
 ]
