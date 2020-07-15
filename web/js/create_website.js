@@ -182,8 +182,7 @@ function CreateFreeWrite(mydivsi){
      var myimages = newdiv.getElementsByTagName("img");
      for (var i = 0; i < myimages.length; i++){
           $(myimages[i]).attr('src' , "../project_assets/" + $(myimages[i]).attr('src'));
-          $(myimages[i]).attr('style' , "justify-content:center;text-align:center;float:center;");
-          $(myimages[i]).attr('class' , "imgOnly");
+          $(myimages[i]).attr('class' , "imgOnly col-sm-6 col-md-6 col-lg-6");
 
      }
 
@@ -191,12 +190,41 @@ function CreateFreeWrite(mydivsi){
     if ( ($(this).find('img').length) &&     // If there's an image
          (!$.trim($(this).text()).length))   // and there's no text
     {
-         console.log("add class.........");
+         if($(this).find('img').length > 1){
+            $(this).addClass('p_imgOnly');
+       } else{
+              $(this).addClass('lonely_p_imgOnly p_imgOnly');
+       }
+            $(this).css({"float":"right"});
+               // Add a special CSS class
 
-        $(this).addClass('imgOnly');         // Add a special CSS class
     }
+
 });
 
+     var p_arr=  document.getElementsByClassName('p_imgOnly');
+
+     for(let i=0;i < (p_arr.length); i++){
+
+          let img_arr = p_arr[i].getElementsByTagName("img");
+
+          for(let j = 0; j < img_arr.length; j++){
+
+          if (img_arr.length%4==0){
+               $(img_arr[j]).attr('class' , "imgOnly col-sm-3 col-md-3 col-lg-3");
+          } else if(img_arr.length%3==0){
+               $(img_arr[j]).attr('class' , "imgOnly col-sm-4 col-md-4 col-lg-4");
+          } else if(img_arr.length%2==0){
+               $(img_arr[j]).attr('class' , "imgOnly col-sm-6 col-md-6 col-lg-6");
+          }else if(img_arr.length<=1){
+               $(img_arr[j]).attr('class' , "imgOnly col-sm col-md col-lg");
+          } else{
+               $(img_arr[j]).attr('class' , "imgOnly col-sm-4 col-md-4 col-lg-4 ");
+          }
+     }
+
+
+     }
      //append content to "appendhere"
      var append_div_here = document.getElementById("myappendcontent");
      console.log("appending new free write div.........");

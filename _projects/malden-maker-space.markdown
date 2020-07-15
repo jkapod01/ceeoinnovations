@@ -45,9 +45,11 @@ This segment from WBUR covers the transformation of the Malden woodworking shop 
 
 <div class="free_write" markdown="1">
 # Learn More about the Malden Makerspace
+
 ![Some Art](nedlams-workshop/clutter.jpg)
+
 ### [NSF Grant](https://www.nsf.gov/discoveries/disc_summ.jsp?cntn_id=135609)
-### [Learning Lab Article by WBUR] (http://learninglab.legacy.wbur.org/2015/03/11/inquiry-based-arts-and-engineering-space-enriches-student-learning/)
+### [Learning Lab Article by WBUR](http://learninglab.legacy.wbur.org/2015/03/11/inquiry-based-arts-and-engineering-space-enriches-student-learning/)
 ### [Makespace Network](https://blog.tuftsceeo.org/2015/04/21/nedlams-workshop/)
 ### [CEEO Blog](https://blog.tuftsceeo.org/2015/04/21/nedlams-workshop/)
 </div>
@@ -59,5 +61,3 @@ This segment from WBUR covers the transformation of the Malden woodworking shop 
 #### Connect on [twitter](https://twitter.com/makerswelcomed?lang=en)
 
 </div>
-
-
