@@ -1,5 +1,6 @@
 ---
 layout: post
+title: InterLACE
 displayimg: interLace/interlacehead.png
 categories: ["Tech"]
 authors: []
