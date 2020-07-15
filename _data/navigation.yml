@@ -1,5 +1,5 @@
 docs_list_title:
 docs:
 
-- title: about
-  url: about.html
+- title: Search
+  url: index.html#searchbox
