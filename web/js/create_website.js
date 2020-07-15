@@ -150,6 +150,7 @@ function AddHrefSRCtoNewDiv_Prepend(get_class, at_place, copy_this_data, search_
      var copyhere = search_here.getElementsByClassName(get_class)[at_place];
 
           console.log("copy_this_data.href");
+          console.log("Changed!");
           console.log(copy_this_data.href);
           console.log(is_url(copy_this_data.href));
          if (!(is_url(copy_this_data.href)) || copy_this_data.href.indexOf("/ceeoinnovations") >= 0 ){
