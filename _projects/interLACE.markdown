@@ -20,7 +20,7 @@ InterLACE is an interactive digital white-board interface for putting student id
 <!--PDF creates a grid of pdfs--------------------->
 <div class="pdf" markdown="1">
 # InterLACE Poster
-[Interactive Learning and Collaboration Environment](interLace/interLACEPoster.png)
+[Interactive Learning and Collaboration Environment](interLace/InterLACEPoster.png)
 <!-- insert as many links here as you want to dynamically create a grid of pdfs-->
 </div>
 
