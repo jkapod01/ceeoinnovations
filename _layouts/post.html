@@ -39,7 +39,7 @@ layout: "wrapper"
           console.log("hi?");
           $("#mypdf").on("load", function() {
                let head = $("#mypdf").contents().find("head");
-               let css = '<style>body{width:100%;}</style>';
+               let css = '<style>img{width:100%;}</style>';
                $(head).append(css);
           });
           </script>

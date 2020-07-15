@@ -218,6 +218,7 @@ ul li:nth-child(even)::before {
 }
 iframe{
     border: none;
+    width:90%;
 }
 .pdf-segment{
     margin: 3%;
