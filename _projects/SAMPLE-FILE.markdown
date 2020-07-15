@@ -1,7 +1,7 @@
 ---
 layout: post
 displayimg: IMAGEFILENAME/IMGNAME 
-categories: ["DELETE CATEGORIES THAT DON'T APPLY","Spike Prime", "Lesson Plans", "Makerspaces", "Robotics", "Ev3/NXT", "3D Printing"] 
+categories: ["DELETE CATEGORIES THAT DON'T APPLY","Spike Prime", "Lesson Plans", "Makerspaces", "Robotics", "Ev3/NXT", "3D Printing", "Tech"] 
 authors: []
 ---
 <!--SITE_TITLE creates a title for your webpage----------------->
