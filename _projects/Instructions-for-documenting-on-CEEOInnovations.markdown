@@ -53,7 +53,7 @@ Done!
 <!--document creates a grid of documents--------------------->
 <div class="document" markdown="1">
 # Guides on how to use CEEOInnovations 
-["Cheatsheet" For documenting](Inno_instruct/cheatsheet.pdf)
+["Cheatsheet" For documenting](inno_instruct/cheatsheet.pdf)
 [Presentation slides with lesson on documenting](https://docs.google.com/presentation/d/e/2PACX-1vQuVgfNrRipSOYAHUVL6Y9ZKi2BMW7wI95fPlgpEIaGu6yQpx-1VEYMOJpOCQ8sqcJCkL5O3a0ZDf7N/embed?start=false&loop=false&delayms=3000)
 [Step by step instructions for documenting](https://docs.google.com/presentation/d/e/2PACX-1vSiyHN0pkL6nAxrFn-ZflAJsobtjKmr8_RYveM7Q2lLKXcMvObQm-EdgSUIfjUJjTsIXpkRGkJq0JxH/embed?start=false&loop=false&delayms=3000)
 [Guide to Markdown and Divs](https://docs.google.com/presentation/d/e/2PACX-1vRYPC-Jo3iU7rD1_seS9CQZFMbwctRxy_XQWQ-WJGz8waFeZH0QQwa66DYzZXbPtFb3f65SbYsrJVN0/embed?start=false&loop=false&delayms=3000)
