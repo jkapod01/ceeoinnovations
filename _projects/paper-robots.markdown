@@ -5,7 +5,7 @@ categories: ["Lesson Plans", "Robotics"]
 ---
 
 <div class="site_title" markdown="1">
-# PaperBots
+# PaperBots with Dwayne
 </div>
 
 <div class="image_text_overlay" markdown="1">
@@ -42,11 +42,18 @@ Pull-up Man is a demonstration of rotational motion converted into linear motion
 }
 
 ```
-![Final pull up man](paper-bots/pullup-man-assembled.jpeg)
+![Final pull up man](PICTURES_OF_THE_ROCK/therock.png)
 ### Here is a photo of
 ### the final product:
 </div>
-
+<div class="free_write" markdown="1">
+![here is the rock](PICTURES_OF_THE_ROCK/mr.dwayne.jpg)
+# The Rock is Awesome
+- he is hunky
+- he has tattoos
+- he is tan
+- he has muscles
+</div>
 <div class="document" markdown="1">
 # PaperBots Cutouts
 [Pull Up Man Lesson Plan](paper-bots/Pull-Up-Man-Lesson-Plan.pdf)
