@@ -15,7 +15,7 @@ categories: ["Lesson Plans"]
 Design Keeper is a digital notebooking app designed for keeping track of engineering design projects (and more!).
 </div>
 
-<div class="documents" markdown="1">
+<div class="document" markdown="1">
 # Get started with Design Keeper
 [Design Keeper Website](http://www.designkeeper.me/users/sign_in)
 </div>
