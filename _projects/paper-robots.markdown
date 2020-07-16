@@ -9,7 +9,6 @@ categories: ["Lesson Plans", "Robotics"]
 </div>
 
 <div class="image_text_overlay" markdown="1">
-
 ![Link to my pic](paper-bots/cutie-pie.jpg)
 ## An Inexpensive Option for Engineering Education
 # Accessible Robotics
@@ -32,6 +31,8 @@ Pull-up Man is a demonstration of rotational motion converted into linear motion
 > The pull up man is my favorite "PaperBots" project
 >
 > -a Student
+
+
 ### Attach motors to Pull-Up man using this simple code:
 
 ```
@@ -42,6 +43,8 @@ Pull-up Man is a demonstration of rotational motion converted into linear motion
 }
 
 ```
+Here is a photo of the final product:
+![Link to my pic](paper-bots/pullup-man-assembled.jpeg)
 
 </div>
 
