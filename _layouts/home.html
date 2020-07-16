@@ -102,7 +102,7 @@ box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.14);
            {% assign my_variable = 100 %}
 			{% for project in site.projects %}
                {% if project.url != "/projects/SAMPLE-FILE.html" %}
-		  	<div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay={{my_variable}}>
+		  	<div class="col-sm-4 col-md-4 col-lg-4" data-aos="fade" data-aos-delay=100>
 	  	 	   <a rel="preload"  href="{{ project.url | prepend: site.baseurl | replace: '//', '/' }}" class="work-thumb">
 	    	 	    <div class="work-text">
 	 	 	           <h2>{{project.title}}</h2>
@@ -191,7 +191,7 @@ box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.14);
 
 
 <script>
-     var sjs = SimpleJekyllSearch({
+     SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: '/search.json'
@@ -201,7 +201,7 @@ box-shadow: 0px -1px 13px 0px rgba(0,0,0,0.14);
 <script type="text/javascript">
 
       var my_button_array = document.getElementsByClassName("myButton");
-      console.log(my_button_array);
+
 
      for (let i = 0; i < my_button_array.length; i++){
           var mybuttontext = my_button_array[i].innerHTML;
