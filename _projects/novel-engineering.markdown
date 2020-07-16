@@ -6,16 +6,22 @@ displayimg: novel-engineering/novel_engineering.png
 
 
 <div class="site_title" markdown="1">
-# Novel Engineering
+# Novel Engineering with Dwayne
 </div>
 
 <div class="image_text_overlay" markdown="1">
-![Link to my pic](novel-engineering/gallery_6.png)
+![Link to my pic](PICTURES-OF-THE-ROCK/The-Rock-Tequila.jpg)
 ## Create Based on Compeling Stories
 # Building based on Books
 Inspired by kids and grounded in research, Novel Engineering is an innovative approach to integrate engineering and literacy in elementary and middle school.
 </div>
 
+<div class="free_write" markdown="1">
+![Link to the picture of the Dwayne](PICTURES-OF-THE-ROCK/mr.dwayne.jpg)
+# Introducing Johnson the Dwayne Rock
+-Big
+-Large
+-Wrestle
 
 <div class="document" markdown="1">
 # Sample Chapter of the Novel Engineering Book
