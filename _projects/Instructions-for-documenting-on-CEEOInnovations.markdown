@@ -67,7 +67,7 @@ Markdown is a "short hand" way of writing html that makes it easy to create web 
 Most of the components on this site are made using the **header, subheader, image, and link** attributes, however Markdown offers a wide variety of styling options shown in
 the pictured table. These styling options can be used with "free write" div sections of webpages (like this one!)
 ![Markdown Table 1](inno_instruct/markdown2.png)
-![Markdown Table 2](inno instruct/markdown3.png)
+![Markdown Table 2](inno_instruct/markdown3.png)
 
 Complete documentation for markdown can be found [here](https://www.markdownguide.org/basic-syntax/).
 </div>
@@ -81,7 +81,7 @@ Complete documentation for markdown can be found [here](https://www.markdownguid
 This and other projects pages on this site on structed into "sections" with different designs. This isn't normally possible with markdown, however using "div" elements we can get these cool sub sections. **Divs are the "building blocks" of a CEEOInnovations project page.**
 
 
-![Markdown Table 2](inno instruct/divexample1.png)
+![Markdown Table 2](inno_instruct/divexample1.png)
 
 Divs can be repeated and ordered in any order. If you don't want to use a certain section of a div (such as a title or subtitle) you can just delete it!
 
@@ -99,6 +99,127 @@ Where "DIV_NAME" can be one of **five** possible sections. Each of these section
 3. video_text_overlay
 4. document 
 5. free_write
+
+## 1."site_title"
+
+Site title provides a "heading" for a projects page 
+
+The code for a sample "site_title" div is below:
+
+```
+<div class=”site_title” markdown="1">
+ # PaperBots
+ # Multiple
+ # Lines
+ </div>
+ ```
+This will produce: 
+ 
+!(sitetitle)[inno_instruct/sitetitle.jpg]
+ 
+ 
+## 2."image_text_overlaye"
+
+image_text_overlay provides a large image with a title, subtitle, and description overlayed on it.
+
+
+The code for a sample "image_text_overlay" div is below:
+
+```
+<div class="image_text_overlay" markdown="1">
+![Link to my pic](paper-bots/headimagerobot.jpg)
+## An Inexpensive Option for Engineering Education
+# Accessible Robotics
+PaperBots provide a low cost method of
+creating educational robots for any age.
+</div>
+ ```
+This will produce: 
+ 
+!(imagehead)[inno_instruct/imagetext.png]
+ 
+## 3. "video_text_overlay"
+
+video_text_overlay provides a large video with a title, subtitle, and description overlayed on it.
+
+## **IMPORTANT** When copying videos for CEEO Innovations you must copy the 'youtu.be" link found by clicking the share button on a video *not* the normal URL.
+
+ !(sitetitle)[inno_instruct/youtubelink.png]
+ 
+The code for a sample "video_text_overlay" div is below:
+```
+<div class="image_text_overlay" markdown="1">
+![Link to my pic](paper-bots/headimagerobot.jpg)
+## An Inexpensive Option for Engineering Education
+# Accessible Robotics
+PaperBots provide a low cost method of
+creating educational robots for any age.
+</div>
+ ```
+ This will produce: 
+ 
+ !(sitetitle)[inno_instruct/paperbot.png]
+ 
+ 
+## 4. "document"
+
+"document" lets you create a grid or a single instance of either local hosted or external "documents" these can be pdfs, presentations, images, website previews, etc.
+To embed a google presentation, copy the "embed" link within the iframe embed option but only the embed link.
+
+ 
+The code for a sample "document" div is below:
+
+```
+<div class="document" markdown="1">
+# PAPER CUTOUTS
+[Pull Up Man Lesson Plan](paper-bots/Pull-Up-Man-Lesson-Plan.pdf)
+[HexaBot Lesson Plan](paper-bots/HexaBot-Lesson-Plan.pdf)
+[HexaBot Lesson Plan](paper-bots/PUMan_Cutout.pdf)
+[PaperBots Site](https://www.paperbots.org/)
+</div>
+ ```
+ This will produce: 
+ 
+ !(sitetitle)[inno_instruct/iframe.png]
+ 
+ 
+ ## 5. "free_write"
+
+"free_write" can be filled with whatever markdown you want. It is a unstructed section that will display any markdown you write in it in a white section box like this one.
+
+ 
+For example, this is one sample free_write:
+
+```
+<div class="free_write" markdown="1">
+# Do big headers
+### or little headers [or links](www.paperbots.com)
+or paragraphs
+
+- or
+- bulleted
+- lists
+
+\`\`\`
+void This_Is_A_Code_Block(int max_strength){
+     for (int i = 0; i < max_strength; i++){
+          Declare_it_using_backticks();
+     }
+}
+
+\`\`\`
+</div>
+
+ ```
+It uses some more complicated markdown like bullet lists, sub-subheaders and code blocks. It will produce the following output: 
+!(sitetitle)[inno_instruct/freewrite2.png]
+
+### No two "free_write sections look alike because they can be filled with anything
+
+This is a different "free_write" code block:
+
+
+</div>
 
 </div>
 
