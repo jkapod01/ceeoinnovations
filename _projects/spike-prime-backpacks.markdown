@@ -20,12 +20,7 @@ LEGO® Education SPIKE™ Prime is a powerful STEAM learning solution for middle
 
 <div class="document" markdown="1">
 # Spike Prime Backpacks
-[Backpack #1: OpenMV Camera](https://www.instructables.com/id/Backpack-1-OpenMV-Camera/)
-[Backpack #2: Grove Sensors](https://www.instructables.com/id/Backpack-2-Grove-Sensors/)
-[Backpack #3: PyBoard](https://www.instructables.com/id/Backpack-3-PyBoard/)
-[Backpack #4: Breadboard](https://www.instructables.com/id/Backpack-4-Breadboard/)
-[Backpack #5: Micro:bit](https://www.instructables.com/id/Backpack-5-Microbit/)
-[Backpack #6: UniversalConnector](https://www.instructables.com/id/Backpack-6-Universal-Connector/)
+[Backpack #1: OpenMV Camera](spike-prime-backpacks/Backpack-1-OpenMV-Camera.pdf)
 </div>
 
 <div class="free_write" markdown="1">
