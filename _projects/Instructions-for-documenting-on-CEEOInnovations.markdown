@@ -218,8 +218,18 @@ It uses some more complicated markdown like bullet lists, sub-subheaders and cod
 
 This is a different "free_write" code block:
 
-
+```
+<div class="free_write" markdown="1">
+# What can I find on [legoengineering.com](http://www.legoengineering.com/)
+![Robots and kids](legoengineering/challenge1.jpg)
+- Help getting started with EV3, Spike Prime, and WeDo robotics in the classroom
+- Lesson Plans and ideas for Engineering Design plans
+- Support using Lego Robotics software and integrating it with other programs
+- A community of teacher and educators interested in engineering
 </div>
+```
+It uses lists, images, headers, and links. It will produce the following result:
+!(sitetitle)[inno_instruct/free_write.png]
 
 </div>
 
