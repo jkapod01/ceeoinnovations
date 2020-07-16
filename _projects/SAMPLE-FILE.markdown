@@ -25,11 +25,11 @@ THIS IS WHERE YOU CAN WRITE A DESCRIPTION ABOUT YOUR VIDEO.
 THIS IS WHERE YOU CAN WRITE A DESCRIPTION ABOUT YOUR IMAGE.
 </div>
 
-<!--PDF creates a grid of pdfs--------------------->
-<div class="pdf" markdown="1">
+<!--document creates a grid of documentss--------------------->
+<div class="document" markdown="1">
 # TITLE OF PDF SECTION
-[TITLE OF PDF](PROJECTFILENAME/NAME OF PDF FILE--.pdf)
-[TITLE OF PDF](PROJECTFILENAME/NAME OF PDF FILE--.pdf)
+[TITLE OF document](PROJECTFILENAME/NAME OF PDF/documemt FILE)
+[TITLE OF document](PROJECTFILENAME/NAME OF PDF/document FILE)
 <!-- insert as many links here as you want to dynamically create a grid of pdfs-->
 </div>
 
