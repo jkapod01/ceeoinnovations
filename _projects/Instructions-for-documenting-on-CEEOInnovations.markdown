@@ -6,7 +6,8 @@ authors: []
 ---
 <!--SITE_TITLE creates a title for your webpage----------------->
 <div class="site_title" markdown="1">
-# Instructions for documenting on CEEO Innovations
+# Instructions for
+# Documenting on CEEO Innovations
 </div>
 
 <!--IMAGE_TEXT_OVERLAY creates a image with a text box over it--------------------->
