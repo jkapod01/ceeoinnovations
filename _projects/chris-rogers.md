@@ -10,7 +10,7 @@ categories: ["Makerspaces"]
 
 <!--IMAGE_TEXT_OVERLAY creates a image with a text box over it--------------------->
 <div class="image_text_overlay" markdown="1">
-![chris](Chris/IDSC_0222.Small)
+![chris](Chris/DSC_0222.Small_.jpg)
 # Chris is cool
 He works at the CEEO 
 </div>
@@ -33,7 +33,7 @@ He works at the CEEO
                If something doesn't look how you expect on the page, try adding a linebreak after it--------------------->
 <div class="free_write" markdown="1">
 ## Hi I love [Chris](https://www.youtube.com/watch?v=DKt8iVEQYwI)
-![chris](Chris/IDSC_0222.Small)
+![chris](Chris/DSC_0222.Small.jpg)
 
 - this is 
 - a list
