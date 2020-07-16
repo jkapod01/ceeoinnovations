@@ -35,27 +35,7 @@ THIS IS WHERE YOU CAN WRITE A DESCRIPTION ABOUT YOUR IMAGE.
 
 <!--FREE WRITE lets you write any markdown you want (include images, lists, titles, code,etc)
                If something doesn't look how you expect on the page, try adding a linebreak after it--------------------->
-<div class="free_write" markdown="1">
-# Include anything you want here
-In any order 
-##  You can do titles or sub titles
-
-or add paragraphs as well
-![TITLE OF IMAGE](IMAGEFILENAME/IMGNAME)
-### or do sub sub title
-
-- or 
-- make
-- bulleted 
-- losts
-
-```
-void You_Can_Write_Code(int by){
-     Writing();
-      Your_Code_Between_Backticks();
-     }
-}
-```
+<div class="free_write" markdown="1"> 
 </div>
 
 
