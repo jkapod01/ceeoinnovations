@@ -18,7 +18,7 @@ authors: []
 InterLACE is an interactive digital white-board interface for putting student ideas at the center of discussion and enhancing collaboration and peer-to-peer learning.
 </div>
 
-<div class="image_text_overlay" markdown="1">
+<div class="video_text_overlay" markdown="1">
 [Header Image](https://youtu.be/ce5mO42Z6es)
 # Visual Classrooms
 ## An overview of Visual Classrooms
