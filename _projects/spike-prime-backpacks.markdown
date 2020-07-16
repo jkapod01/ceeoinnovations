@@ -18,7 +18,7 @@ LEGO® Education SPIKE™ Prime is a powerful STEAM learning solution for middle
 
 
 
-<div class="documents" markdown="1">
+<div class="document" markdown="1">
 # Spike Prime Backpacks
 [Backpack #1: OpenMV Camera](https://www.instructables.com/id/Backpack-1-OpenMV-Camera/)
 [Backpack #2: Grove Sensors](https://www.instructables.com/id/Backpack-2-Grove-Sensors/)
@@ -36,9 +36,10 @@ You can use any terminal emulator to code the SPIKE Prime hub.
 ![Link to my pic](spike-prime-backpacks/spike_1.png)
 
 ### Supplies:
--SPIKE Prime hub
--Computer with USB Port / bluetooth
--USB cable to connect the hub to the computer
+
+- SPIKE Prime hub
+- Computer with USB Port / bluetooth
+- USB cable to connect the hub to the computer
 
 #### Read more about getting started with MicroPython [here](https://ceeoinnovations.github.io/SPIKEPrimeBackpacks.html)
 </div>
