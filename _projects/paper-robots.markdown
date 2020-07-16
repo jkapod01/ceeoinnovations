@@ -9,7 +9,7 @@ categories: ["Lesson Plans", "Robotics"]
 </div>
 
 <div class="image_text_overlay" markdown="1">
-![Link to my pic](paper-bots/my-paper-robot.jpeg)
+![Link to my pic](paper-bots/my_paper_robot.jpeg)
 ## Allison is cool
 PaperBots provide a low cost method of
 creating educational robots for any age.
