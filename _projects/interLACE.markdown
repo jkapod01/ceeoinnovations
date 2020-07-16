@@ -10,7 +10,7 @@ authors: []
 # interLACE
 </div>
 
-<!--IMAGE_TEXT_OVERLAY creates a image with a text box over it--------------------->
+
 <div class="image_text_overlay" markdown="1">
 ![Header Image](interLace/interlacedata4.jpg)
 # InterLACE
@@ -18,11 +18,18 @@ authors: []
 InterLACE is an interactive digital white-board interface for putting student ideas at the center of discussion and enhancing collaboration and peer-to-peer learning.
 </div>
 
-<!--PDF creates a grid of pdfs--------------------->
+<div class="image_text_overlay" markdown="1">
+[Header Image](https://youtu.be/ce5mO42Z6es)
+# Visual Classrooms
+## An overview of Visual Classrooms
+InterLACE is hosted on Visual Classrooms, an interactive collaboration platform designed to support active learning in the modern classroom.  
+</div>
+
+
 <div class="document" markdown="1">
 # InterLACE Poster
 [Interactive Learning and Collaboration Environment](interLace/InterLACEPoster.png)
-<!-- insert as many links here as you want to dynamically create a grid of pdfs-->
+<!-- insert as many links here as you want to dynamically create a grid of documents-->
 </div>
 
 
@@ -36,20 +43,17 @@ to "what the students think. It promotes collaborative, engaging learning.
 
 </div>
 
-<!--FREE WRITE lets you write any markdown you want (include images, lists, titles, code,etc)
-               If something doesn't look how you expect on the page, try adding a linebreak after it--------------------->
+
 <div class="free_write" markdown="1">
 # Get started with InterLACE
 ![filler image](interLace/sideResearch.jpg)
-
 
 The on-going NSF-sponsored research project InterLACE (Interactive Learning and Collaboration Environment) at Tufts University spun off to a commercialized product called Visual Classrooms.
 
 [Sign up to use interLACE at https://visualclassrooms.com/](https://visualclassrooms.com/)
 </div>
 
-<!--FREE WRITE lets you write any markdown you want (include images, lists, titles, code,etc)
-               If something doesn't look how you expect on the page, try adding a linebreak after it--------------------->
+
 <div class="free_write" markdown="1">
 ### Learn more about interLACE
 
