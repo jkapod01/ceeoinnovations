@@ -17,7 +17,7 @@ Inspired by kids and grounded in research, Novel Engineering is an innovative ap
 </div>
 
 
-<div class="documents" markdown="1">
+<div class="document" markdown="1">
 # Sample Chapter of the Novel Engineering Book
 [Novel Engineering k-8](https://static.nsta.org/pdfs/samples/PB449Xweb.pdf)
 </div>
@@ -42,7 +42,7 @@ Inspired by kids and grounded in research, Novel Engineering is an innovative ap
 </div>
 
 <div class="video_text_overlay" markdown="1">
-![Link to my video](https://youtu.be/P1Ix0Axa-LQ)
+[Link to my video](https://youtu.be/P1Ix0Axa-LQ)
 ## Example Activity
 # Muncha! Muncha! Muncha!
 This video describes an example novel engineering activity that could be implemented in the classroom.
