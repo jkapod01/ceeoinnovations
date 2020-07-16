@@ -1,8 +1,7 @@
 ---
 layout: post
-displayimg: IMAGEFILENAME/IMGNAME 
+displayimg: IMAGEFOLDERNAME/IMGNAME 
 categories: ["DELETE CATEGORIES THAT DON'T APPLY","Spike Prime", "Lesson Plans", "Makerspaces", "Robotics", "Ev3/NXT", "3D Printing", "Tech"] 
-authors: []
 ---
 <!--SITE_TITLE creates a title for your webpage----------------->
 <div class="site_title" markdown="1">
@@ -27,9 +26,9 @@ THIS IS WHERE YOU CAN WRITE A DESCRIPTION ABOUT YOUR IMAGE.
 
 <!--document creates a grid of documentss--------------------->
 <div class="document" markdown="1">
-# TITLE OF PDF SECTION
-[TITLE OF document](PROJECTFILENAME/NAME OF PDF/documemt FILE)
-[TITLE OF document](PROJECTFILENAME/NAME OF PDF/document FILE)
+# TITLE OF SECTION
+[TITLE OF document](PROJECTFOLDERNAME/NAME OF documemt FILE)
+[TITLE OF document](PROJECTFOLDERENAME/NAME OFdocument FILE)
 <!-- insert as many links here as you want to dynamically create a grid of pdfs-->
 </div>
 
