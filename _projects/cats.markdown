@@ -9,14 +9,6 @@ authors: []
 # Cats Cats Cats
 </div>
 
-<!--VIDEO_TEXT_OVERLAY creates a video with a text box over it--------------------->
-<div class="video_text_overlay" markdown="1">
-[TITLE OF VIDEO](--- paste a youtu.be link here--)
-# YOUR VIDEO TITLE
-## YOUR VIDEO SUBTITLE
-THIS IS WHERE YOU CAN WRITE A DESCRIPTION ABOUT YOUR VIDEO.
-</div>
-
 <!--IMAGE_TEXT_OVERLAY creates a image with a text box over it--------------------->
 <div class="image_text_overlay" markdown="1">
 ![cats are awesome](cats/Cute-Cat-2.jpg)
