@@ -5,7 +5,7 @@ categories: ["Lesson Plans", "Robotics"]
 ---
 
 <div class="site_title" markdown="1">
-# PaperBots 
+# PaperBots  
 </div>
 
 <div class="image_text_overlay" markdown="1">
