@@ -12,8 +12,9 @@ authors: []
 
 <!--IMAGE_TEXT_OVERLAY creates a image with a text box over it--------------------->
 <div class="image_text_overlay" markdown="1">
-# Add to the CEEO's Portfolio
-## CEEO innovations is a hub for the work the CEEO does
+![my header image](inno_instruct/tuftsceeo.jpg)
+# The CEEO Portfolio
+## CEEO innovations is a hub for the the CEEO's work
 CEEO innovations is a “hub” for all the cool projects going on at the CEEO. “Projects” pages on the site like the one you will make 
 will let visitors learn about specific projects going  at the CEEO.
 *Think of your page as an “advertisement” or summary of your project.*
@@ -34,9 +35,10 @@ will let visitors learn about specific projects going  at the CEEO.
 - Any relevant documents or pdfs
 - Any relevant videos
 - Links to related sites so people can learn more about the project
+
 </div>
 
-<div class="free_write markdown="1">
+<div class="free_write" markdown="1">
 
 # Creating a Page
 1. Use Drag and Drop to upload a folder of images and documents for your page to project assets 
