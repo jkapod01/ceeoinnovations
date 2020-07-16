@@ -2,21 +2,23 @@
 layout: post
 displayimg: design-keeper/design_keeper.jpg
 categories: ["Lesson Plans"]
-authors: []
 ---
-<!--SITE_TITLE creates a title for your webpage----------------->
+
 <div class="site_title" markdown="1">
 # Design Keeper
 </div>
 
 
-<!--IMAGE_TEXT_OVERLAY creates a image with a text box over it--------------------->
 <div class="image_text_overlay" markdown="1">
 ![design keeper head](design-keeper/design_keeper_head.jpg)
 # Meet Design Keeper
 Design Keeper is a digital notebooking app designed for keeping track of engineering design projects (and more!).
 </div>
 
+<div class="documents" markdown="1">
+# Get started with Design Keeper
+[Design Keeper Website](http://www.designkeeper.me/users/sign_in)
+</div>
 
 <div class="free_write" markdown="1">
 # What is design keeper?
@@ -24,7 +26,6 @@ Design Keeper is a digital notebooking app designed for keeping track of enginee
 ![Image of design keeper](design-keeper/kid-with-ipad.jpg)
 An engineering design notebooking tool for upper elementary, middle, and high school students. Seven different notebook page templates help students document their problem-solving process as they carry out key practices of engineering design. Specific prompts for photos, videos, and text align with each practice and help learners keep multimedia records of their thinking, building, and testing.
 This design notebook can spark informed decision-making and thoughtful collaboration between design team members, and help students and teachers collaboratively construct knowledge as they carry out engineering design processes.
-
 *Seven color-coded notebook page templates:*
 *Problem: Define the criteria, constraints, and method for testing possible solution*
 </div>
