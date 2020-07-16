@@ -4,11 +4,11 @@ displayimg: nedlams-workshop/students.jpg
 categories: ["Makerspaces"]
 ---
 <div class="site_title" markdown="1">
-# The Malden Maker Space
+# The Malden Maker Space with Dwayne (and Ethan Goldman)
 </div>
 
 <div class="image_text_overlay" markdown="1">
-![Makerspace Banner](nedlams-workshop/workshop.jpg)
+![Makerspace Banner](PICTURES_OF_THE_ROCK/mr.dwayne.jpg)
 # Nedlam's Workshop
 ## The Malden Maker Space
 
@@ -21,6 +21,17 @@ CEEO helped to implement an elective class in the Makerspace as well as extensiv
 [The Malden Makerspace](https://youtu.be/m6AR8CENkeQ)
 ## Restoring an abandoned workshop
 This segment from WBUR covers the transformation of the Malden woodworking shop into a hub for innovation over the course of the 2015 school year.
+</div>
+
+<div class="free_write" markdown="1">
+# Pictures of the Rock and info
+# (He's a pretty cool guy...)
+
+![The Rock](PICTURES_OF_THE_ROCK/the rock.jpg)
+- Thats the rock!
+- He's cool
+- Wow
+- I hope this works :)
 </div>
 
 <div class="free_write" markdown="1">
