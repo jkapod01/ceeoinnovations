@@ -16,8 +16,13 @@ displayimg: novel-engineering/novel_engineering.png
 Inspired by kids and grounded in research, Novel Engineering is an innovative approach to integrate engineering and literacy in elementary and middle school.
 </div>
 
-<div class="free_write" markdown="1">
 
+<div class="documents" markdown="1">
+# Sample Chapter of the Novel Engineering Book
+![Novel Engineering k-8](https://static.nsta.org/pdfs/samples/PB449Xweb.pdf)
+</div>
+
+<div class="free_write" markdown="1">
 # Overview
 ## Novel Engineering
 
@@ -34,5 +39,11 @@ Inspired by kids and grounded in research, Novel Engineering is an innovative ap
      - Students consider the needs of the story’s character/client and the context/constraints imposed by the text as they brainstorm possible solutions.
 - Design a solution
      - Students work in teams to plan and build a functional prototype that addresses the character’s needs and constraints.
+</div>
 
+<div class="video_text_overlay" markdown="1">
+![Link to my video](https://youtu.be/P1Ix0Axa-LQ)
+## Example Activity
+# Muncha! Muncha! Muncha!
+This video describes an example novel engineering activity that could be implemented in the classroom.
 </div>
