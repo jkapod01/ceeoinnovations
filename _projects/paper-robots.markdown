@@ -10,7 +10,7 @@ categories: ["Lesson Plans", "Robotics"]
 
 <div class="image_text_overlay" markdown="1">
 
-![Link to my pic](paper-bots/cutiepie.jpg)
+![Link to my pic](paper-bots/cutie-pie.jpg)
 ## An Inexpensive Option for Engineering Education
 # Accessible Robotics
 PaperBots provide a low cost method of
