@@ -31,7 +31,7 @@ will let visitors learn about specific projects going  at the CEEO.
 - At least 2-5 images (give them easy to type names) saved to a folder on your computer
 - *This includes a “display” cropped 2:3*
 
-### Optional but not required:
+### Optional but recommended:
 
 - Any relevant documents or pdfs
 - Any relevant videos
