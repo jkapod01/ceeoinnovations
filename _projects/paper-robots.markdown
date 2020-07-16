@@ -5,46 +5,33 @@ categories: ["Lesson Plans", "Robotics"]
 ---
 
 <div class="site_title" markdown="1">
-# Allison's PaperBots 
+# PaperBots
 </div>
 
 <div class="image_text_overlay" markdown="1">
-![Link to my pic](paper-bots/my_paper_robot.jpeg)
-## Allison is cool
+
+![Link to my pic](paper-bots/cutie-pie.jpg)
+## An Inexpensive Option for Engineering Education
+# Accessible Robotics
 PaperBots provide a low cost method of
 creating educational robots for any age.
 </div>
 
-<div class="document" markdown="1">
-# PaperBots Cutouts
-[Pull Up Man Lesson Plan](paper-bots/Pull-Up-Man-Lesson-Plan.pdf)
-[HexaBot Lesson Plan](paper-bots/HexaBot-Lesson-Plan.pdf)
-[PaperBots Site](https://www.paperbots.org/)
-[PaperBots Site](https://www.paperbots.org/)
-[PaperBots Site](https://www.paperbots.org/)
-[PaperBots Site](https://www.paperbots.org/)
-</div>
-
-<div class="video_text_overlay" markdown="1">
-[Pull up man](https://youtu.be/uXMQn6dbxc4)
-## PaperBots Robot
-# Pull Up Man
-</div>
-
 <div class="free_write" markdown="1">
+
 # Pull-up Man
 ## A mobile system for creating a dynamic figure
-Pull-up Man is a demonstration of rotational motion [converted](https://www.paperbots.org/)into linear motion.  It is a simple 2D cam action toy made from cardstock and brass fasteners.  A cam linkage on the back side converts the rotary motion of the crank to the linear motion of the man.  Here are the pieces that make up this kit:
+Pull-up Man is a demonstration of rotational motion converted into linear motion.  It is a simple 2D cam action toy made from cardstock and brass fasteners.  A cam linkage on the back side converts the rotary motion of the crank to the linear motion of the man.  Here are the pieces that make up this kit:
 ![Pull Up Man Pieces](paper-bots/pull-up-pieces.jpeg)
 ### Required Pieces
-
 - 4 arm segments
 - body segment
 - 4 leg segments
 - 16 pins
-
  Students can customize/decorate the final product to personalize to their liking.
-
+> The pull up man is my favorite "PaperBots" project
+>
+> -a Student
 ### Attach motors to Pull-Up man using this simple code:
 
 ```
@@ -60,4 +47,17 @@ Pull-up Man is a demonstration of rotational motion [converted](https://www.pape
 ### the final product:
 </div>
 
+<div class="document" markdown="1">
+# PaperBots Cutouts
+[Pull Up Man Lesson Plan](paper-bots/Pull-Up-Man-Lesson-Plan.pdf)
+[HexaBot Lesson Plan](paper-bots/HexaBot-Lesson-Plan.pdf)
+[HexaBot Lesson Plan](paper-bots/PUMan_Cutout.pdf)
+[PaperBots Site](https://www.paperbots.org/)
+</div>
 
+<div class="video_text_overlay" markdown="1">
+[Pull up man](https://youtu.be/uXMQn6dbxc4)
+## PaperBots Robot
+# Pull Up Man
+This Pull up man is made from a combination of paper and pins.
+</div>
