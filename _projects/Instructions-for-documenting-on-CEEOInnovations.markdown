@@ -55,9 +55,8 @@ Done!
 [Guide to Markdown and Divs](https://docs.google.com/presentation/d/e/2PACX-1vRYPC-Jo3iU7rD1_seS9CQZFMbwctRxy_XQWQ-WJGz8waFeZH0QQwa66DYzZXbPtFb3f65SbYsrJVN0/embed?start=false&loop=false&delayms=3000)
 </div>
 
-<!--FREE WRITE lets you write any markdown you want (include images, lists, titles, code,etc)
-               If something doesn't look how you expect on the page, try adding a linebreak after it--------------------->
-<div class="free_write" markdown="1"> 
+
+<div class="pdf" markdown="1">
+# Give us feedback!
+[Feedback form](https://docs.google.com/forms/d/e/1FAIpQLSfa-MQgvEgZVkgYA_vNH_Gq_ybG0fT5YhXLeveJVmmDm9_8jA/viewform?embedded=true)
 </div>
-
-
