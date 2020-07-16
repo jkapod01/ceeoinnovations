@@ -5,11 +5,11 @@ categories: ["Lesson Plans", "Robotics"]
 ---
 
 <div class="site_title" markdown="1">
-# PaperBots  
+# PaperBots with The Rock 
 </div>
 
 <div class="image_text_overlay" markdown="1">
-![Link to my pic](paper-bots/cutie-pie.jpg)
+![Link to my pic](The-Rock/The-Rock-Tequila.jpg)
 ## An Inexpensive Option for Engineering Education
 # Accessible Robotics
 PaperBots provide a low cost method of
@@ -17,6 +17,13 @@ creating educational robots for any age.
 </div>
 
 <div class="free_write" markdown="1">
+![Link to my pic](The-Rock/The-Rock-Tequila.jpg)
+# The reasons why the Rock is cool
+- He is very strong
+- He is a wrestler 
+- He is also an actor
+- Finally he is very famous 
+</div>
 
 # Pull-up Man
 ## A mobile system for creating a dynamic figure
