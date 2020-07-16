@@ -19,7 +19,7 @@ Inspired by kids and grounded in research, Novel Engineering is an innovative ap
 
 <div class="documents" markdown="1">
 # Sample Chapter of the Novel Engineering Book
-![Novel Engineering k-8](https://static.nsta.org/pdfs/samples/PB449Xweb.pdf)
+[Novel Engineering k-8](https://static.nsta.org/pdfs/samples/PB449Xweb.pdf)
 </div>
 
 <div class="free_write" markdown="1">
