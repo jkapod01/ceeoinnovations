@@ -42,17 +42,17 @@ Pull-up Man is a demonstration of rotational motion converted into linear motion
 }
 
 ```
-![Final pull up man](paperbots/pullup-man-assembled.jpeg)
+![Final pull up man](paper-bots/pullup-man-assembled.jpeg)
 ### Here is a photo of
 ### the final product:
 </div>
 
 <div class="document" markdown="1">
 # PaperBots Cutouts
-[Pull Up Man Lesson Plan](paperbots/Pull-Up-Man-Lesson-Plan.pdf)
+[Pull Up Man Lesson Plan](paper-bots/Pull-Up-Man-Lesson-Plan.pdf)
 [HexaBot Lesson Plan](paper-bots/HexaBot-Lesson-Plan.pdf)
 [HexaBot Lesson Plan](paper-bots/PUMan_Cutout.pdf)
-[PaperBots Site](http://www.paperbots.org/)
+[PaperBots Site](https://www.paperbots.org/)
 </div>
 
 <div class="video_text_overlay" markdown="1">
