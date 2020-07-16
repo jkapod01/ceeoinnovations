@@ -17,7 +17,7 @@ Design Keeper is a digital notebooking app designed for keeping track of enginee
 
 <div class="document" markdown="1">
 # Get started with Design Keeper
-[Design Keeper Website](http://www.designkeeper.me/users/sign_in)
+[Design Keeper Website](https://www.designkeeper.me/users/sign_in)
 </div>
 
 <div class="free_write" markdown="1">
