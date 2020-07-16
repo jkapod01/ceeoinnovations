@@ -42,10 +42,10 @@ will let visitors learn about specific projects going  at the CEEO.
 <div class="free_write" markdown="1">
 
 # Creating a Page
-1. Use **Drag and Drop** to upload a folder of images and documents for your page to **project_assets** on (github)[https://github.com/amoore449/ceeoinnovations] 
+1. Use **Drag and Drop** to upload a folder of images and documents for your page to **project_assets** on [github](https://github.com/amoore449/ceeoinnovations)
 2. Go into the **_projects folder** and copy the **SAMPLE-FILE.markdown** to make a new file for your page. Title it how you want your page to appear with “-” dashes instead of spaces
 3. **Customize** the sample file with divs and markdown to display the content you want.
-4. **Commit** your file and check that it looks how you want it to by refreshing the site (github takes a few minutes to update, you can make this faster by using incognito).
+4. **Commit** your file and check that it looks how you want it to by refreshing the site github takes a few minutes to update, you can make this faster by using incognito).
 5. Done!
 
 </div>
@@ -100,7 +100,7 @@ Where "DIV_NAME" can be one of **five** possible sections. Each of these section
 4. document 
 5. free_write
 
-## 1."site_title"
+## 1. "site_title"
 
 Site title provides a "heading" for a projects page 
 
@@ -115,10 +115,10 @@ The code for a sample "site_title" div is below:
  ```
 This will produce: 
  
-!(sitetitle)[inno_instruct/sitetitle.jpg]
+![sitetitle](inno_instruct/sitetitle.jpg)
  
  
-## 2."image_text_overlaye"
+## 2. "image_text_overlaye"
 
 image_text_overlay provides a large image with a title, subtitle, and description overlayed on it.
 
@@ -136,15 +136,15 @@ creating educational robots for any age.
  ```
 This will produce: 
  
-!(imagehead)[inno_instruct/imagetext.png]
+![imagehead](inno_instruct/imagetext.png)
  
 ## 3. "video_text_overlay"
 
 video_text_overlay provides a large video with a title, subtitle, and description overlayed on it.
 
-## **IMPORTANT** When copying videos for CEEO Innovations you must copy the 'youtu.be" link found by clicking the share button on a video *not* the normal URL.
+#### **IMPORTANT** When copying videos for CEEO Innovations you must copy the 'youtu.be" link found by clicking the share button on a video *not* the normal URL.
 
- !(sitetitle)[inno_instruct/youtubelink.png]
+ ![sitetitle](inno_instruct/youtubelink.png)
  
 The code for a sample "video_text_overlay" div is below:
 ```
@@ -158,7 +158,7 @@ creating educational robots for any age.
  ```
  This will produce: 
  
- !(sitetitle)[inno_instruct/paperbot.png]
+ ![sitetitle](inno_instruct/paperbot.png)
  
  
 ## 4. "document"
@@ -180,7 +180,7 @@ The code for a sample "document" div is below:
  ```
  This will produce: 
  
- !(sitetitle)[inno_instruct/iframe.png]
+ ![sitetitle](inno_instruct/iframe.png)
  
  
  ## 5. "free_write"
@@ -212,7 +212,7 @@ void This_Is_A_Code_Block(int max_strength){
 
  ```
 It uses some more complicated markdown like bullet lists, sub-subheaders and code blocks. It will produce the following output: 
-!(sitetitle)[inno_instruct/freewrite2.png]
+![sitetitle](inno_instruct/freewrite2.png)
 
 ### No two "free_write sections look alike because they can be filled with anything
 
@@ -229,7 +229,7 @@ This is a different "free_write" code block:
 </div>
 ```
 It uses lists, images, headers, and links. It will produce the following result:
-!(sitetitle)[inno_instruct/free_write.png]
+![sitetitle](inno_instruct/free_write.png)
 
 </div>
 
