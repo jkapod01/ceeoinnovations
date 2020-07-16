@@ -50,8 +50,8 @@ Done!
 
 </div>
 
-<!--PDF creates a grid of pdfs--------------------->
-<div class="pdf" markdown="1">
+<!--document creates a grid of documents--------------------->
+<div class="document" markdown="1">
 # Guides on how to use CEEOInnovations 
 ["Cheatsheet" For documenting](Inno_instruct/cheatsheet.pdf)
 [Presentation slides with lesson on documenting](https://docs.google.com/presentation/d/e/2PACX-1vQuVgfNrRipSOYAHUVL6Y9ZKi2BMW7wI95fPlgpEIaGu6yQpx-1VEYMOJpOCQ8sqcJCkL5O3a0ZDf7N/embed?start=false&loop=false&delayms=3000)
@@ -60,7 +60,7 @@ Done!
 </div>
 
 
-<div class="pdf" markdown="1">
+<div class="document" markdown="1">
 # Give us feedback!
 [Feedback form](https://docs.google.com/forms/d/e/1FAIpQLSfa-MQgvEgZVkgYA_vNH_Gq_ybG0fT5YhXLeveJVmmDm9_8jA/viewform?embedded=true)
 </div>
